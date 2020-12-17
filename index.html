@@ -4,59 +4,90 @@
         <title>Rainydays | Home</title>
         <meta name="description" content="Rainjackets with good quality and low price">
         <meta name="viewport" content="width=device-width, initial scale=1">
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <a href="index.html">RainyDays</a>
-            <nav>
+            <nav role="navigation" aria-label="main-menu">
                 <ul>
-                    <li><a href="../jackets-list/men.html">Men</a></li>
-                    <li><a href="../jackets-list/women.html">Women</a></li>
-                    <li><a href="../jackets-list/junior.html">Junior</a></li>
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="listofjackets.html">Men</a></li>
+                    <li><a href="listofjackets.html">Women</a></li>
+                    <li><a href="listofjackets.html">Junior</a></li>
                 </ul>
             </nav>
+            <section>
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-bag"></i>
+            </section>
         </header>
         <main>
-            <section>
-                <h1>New Collection</h1>
-                <a href="..jackets-list/new-collection.html">Shop Now</a>
-                <img src="#" alt="Men with climbing eqiupment">
+            <section class="home-new-collection">
+                <div class="home-new-collection__content">
+                    <h1>New Collection</h1>
+                    <a href="listofjackets.html" class="cta-homepage">Shop Now</a>
+                </div>
             </section>
-            <section>
-                <div>
+            <section class="shop-by-category">
+                <div class="shop-by-category__skiing">
                     <h2>Skiing</h2>
-                    <a href="..jackets-list/skiing.html">Skiing</a>
-                    <img src="#" alt="Backpack and jacket with snow skiing">
+                    <a href="listofjackets.html" class="cta-homepage">Shop Now</a>
+                    <img src="../images/skiing.jpg" alt="Backpack and jacket with snow skiing" class="img-skiing">
                 </div>
-                <div>
+                <div class="shop-by-category__hiking">
                     <h2>Hiking</h2>
-                    <a href="..jackets-list/hiking.html">Hiking</a>
-                    <img src="#" alt="Men and woman hiking together">
+                    <a href="listofjackets.html" class="cta-homepage">Shop Now</a>
+                    <img src="../images/couple-hiking.jpg" alt="Men and woman hiking together" class="img-hiking">
                 </div>
-                <div>
+                <div class="shop-by-category__climbing">
                     <h2>Climbing</h2>
-                    <a href="..jackets-list/climbing.html">Climbing</a>
-                    <img src="#" alt="One person climbing on a steep mountain">
+                    <a href="listofjackets.html" class="cta-homepage">Shop Now</a>
+                    <img src="../images/climbing.jpg" alt="One person climbing on a steep mountain" class="img-climbing">
                 </div>
             </section>
             <section>
-                <h3>Share your experince with us on Instagram @rainydays</h3>
-                <img src="#" alt="Two childres sitting together">
-                <img src="#" alt="Hiking on a mountain top">
-                <img src="#" alt="Girl in a yellow jacket in the snow">
-                <img src="#" alt="Man smiling hiking">
-                <img src="#" alt="Two people standing on a mountain">
+                <div class="instagram-text">
+                    <h3>Share your experince with us on Instagram @rainydays</h3>
+                </div>
+                <div class="img-instagram">
+                    <div>
+                        <img src="../images/kids.jpg" alt="Two childres sitting together" class="img-instagram__photo">
+                    </div>
+                    <div>
+                        <img src="../images/hikers-top.jpg" alt="Hiking on a mountain top" class="img-instagram__photo">
+                    </div>
+                    <div>
+                        <img src="../images/girl-in-yellow.jpg" alt="Girl in a yellow jacket in the snow" class="img-instagram__photo">
+                    </div>
+                    <div>
+                        <img src="../images/smiling-hiking.jpg" alt="Man smiling hiking" class="img-instagram__photo">
+                    </div>
+                    <div>
+                        <img src="../images/people-mountain.jpg" alt="Two people standing on a mountain" class="img-instagram__photo">
+                    </div>   
+                </div>
             </section>
-            <section>
-                <p>Pushing the Comfort Zone</p>
-                <img src="#" alt="cloudy mountain with some snow and ice">
+            <section class="pushing-the-comfort-zone">
+                <div class="pushing-the-comfort-zone__content">
+                    <p>Pushing the Comfort Zone</p>
+                </div>
             </section>
         </main>
         <footer>
-            <a href="contact.html">Contact us</a>
-            <a href="about.html">About us</a>
+            <nav>
+                <ul>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+            <section>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-snapchat-ghost"></i>
+            </section>
         </footer>
     </body>
 </html>

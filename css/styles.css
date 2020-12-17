@@ -1,0 +1,150 @@
+/* Global styles 
+--------------------------------------------------*/
+
+h1 {
+  font-size: 2em;
+}
+
+h1,
+h2 {
+  font-family: "avenir", Verdana, Geneva, Tahoma, sans-serif;
+  color: #001026;
+}
+
+h3,
+a {
+  font-family: "PT serif", Verdana, Geneva, Tahoma, sans-serif;
+  color: #191c20;
+}
+
+a {
+  text-decoration: none;
+  color: #001026;
+}
+
+nav a {
+  padding: 10px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  display: inline;
+}
+
+.active-links {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Home page 
+--------------------------------------------------*/
+.cta-homepage {
+  color: #f7ad1e;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border: solid #f7ad1e 2px;
+}
+
+.img-before-climbing,
+.img-skiing,
+.img-instagram__photo,
+.img-skiing,
+.img-hiking,
+.img-climbing {
+  width: 100%;
+  border: solid #3c67a3 1px;
+}
+
+.home-new-collection {
+  background-image: url(../images/before-climbing.jpg);
+  border: solid #3c67a3 1px;
+  min-height: 50vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.home-new-collection__content {
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  right: 5px;
+  transform: translatex(-50%);
+  font-size: 0.5em;
+}
+
+.shop-by-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-by-category__skiing {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  flex: 1;
+}
+
+.instagram-text {
+  text-align: center;
+}
+
+.img-instagram {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.img-instagram__photo {
+  max-height: 100px;
+}
+
+.pushing-the-comfort-zone {
+  background-image: url("../images/snow-mountain.jpg");
+  min-height: 50vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.pushing-the-comfort-zone__content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 3em;
+}
+
+/* Contact 
+--------------------------------------------------*/
+
+/* About
+--------------------------------------------------*/
+
+/* Check-out
+--------------------------------------------------*/
+
+/* Check-out success
+--------------------------------------------------*/
+
+/* Jacket lists
+--------------------------------------------------*/
+
+/* Jacket specific
+--------------------------------------------------*/
+
+/* Media Queries
+--------------------------------------------------*/
