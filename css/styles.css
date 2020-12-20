@@ -42,9 +42,10 @@ li {
   max-width: 50%;
 }
 
-header {
+header,
+footer {
   border: solid #3c67a3 1px;
-  margin: 0px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
   background-color: #f7f7f7;
 }
 
@@ -110,12 +111,14 @@ header {
 
 .instagram-text {
   text-align: center;
+  font-size: 1.1em;
 }
 
 .img-instagram {
   display: flex;
   justify-content: space-around;
   gap: 5px;
+  margin: 0px 40px;
 }
 
 .img-instagram__photo {
@@ -130,15 +133,16 @@ header {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  margin: 35px 0px 0px 0px;
 }
 
 .pushing-the-comfort-zone__content {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translatex(-50%);
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 /* Contact 
