@@ -1,6 +1,14 @@
 /* Global styles 
 --------------------------------------------------*/
 
+body {
+  width: 100vw;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 2em;
 }
@@ -22,8 +30,19 @@ a {
   color: #001026;
 }
 
-nav a {
-  padding: 40px;
+.header-links {
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  border: solid #3c67a3 1px;
+  margin: 5px;
+  background-color: white;
+  width: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.header-links:hover {
+  font-weight: bold;
 }
 
 ul {
@@ -34,27 +53,54 @@ li {
   display: inline;
 }
 
-.active-links {
-  text-decoration: underline;
-}
-
 .logo {
-  max-width: 50%;
+  width: 200px;
 }
 
 header,
 footer {
-  border: solid #3c67a3 1px;
-  margin: 10px 0px 10px 0px;
   background-color: #f7f7f7;
+  width: 100%;
 }
 
 .header-first-line {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0px 20px;
+}
+
+.fa-search {
+  padding-right: 15px;
 }
 
 .header-second-line {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  margin: 10px 20px 10px 20px;
+  font-size: 0.7em;
+  text-decoration: underline;
+}
+
+.footer-some {
+  padding: 0px 10px;
+}
+.fa-instagram,
+.fa-facebook-f,
+.fa-snapchat-ghost {
+  padding: 0px 10px;
 }
 
 /* Home page 
@@ -62,67 +108,78 @@ footer {
 .cta-homepage {
   color: #f7ad1e;
   font-size: 1.5em;
-  padding: 10px 30px;
+  padding: 5px 30px;
   text-transform: uppercase;
   border: solid #f7ad1e 2px;
+  border-radius: 20px;
+  background-color: white;
 }
 
-.img-before-climbing,
-.img-skiing,
-.img-instagram__photo,
-.img-skiing,
-.img-hiking,
-.img-climbing {
+.img-general {
   width: 100%;
-  border: solid #3c67a3 1px;
+  display: block;
 }
 
 .home-new-collection {
   background-image: url(../images/before-climbing.jpg);
-  border: solid #3c67a3 1px;
   min-height: 50vh;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
+  min-width: 100%;
 }
 
 .home-new-collection__content {
   position: absolute;
   text-align: center;
-  top: 100px;
-  right: 5px;
-  transform: translatex(-50%);
+  bottom: 20px;
+  right: 20px;
   font-size: 0.5em;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  height: 90px;
+  width: 160px;
 }
 
 .shop-by-category {
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
-.shop-by-category__skiing {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+.shop-by-category__content {
+  position: relative;
+}
+.shop-by-category__content-info {
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.5em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  height: 80px;
+  width: 160px;
 }
 
 .instagram-text {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .img-instagram {
   display: flex;
-  justify-content: space-around;
-  gap: 5px;
-  margin: 0px 40px;
+  justify-content: space-evenly;
+  gap: 2px;
+  margin: 20px;
 }
 
-.img-instagram__photo {
-  max-height: 100px;
+.img-instagram__container {
+  width: 100%;
+}
+
+.img-instagram__container img {
+  width: 100%;
 }
 
 .pushing-the-comfort-zone {
@@ -165,3 +222,15 @@ footer {
 
 /* Media Queries
 --------------------------------------------------*/
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .home-new-collection__content {
+    font-size: 0.8em;
+    bottom: 110px;
+    height: 140px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 769px) {
+}
