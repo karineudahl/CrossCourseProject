@@ -98,6 +98,24 @@ footer {
   display: none;
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 0.8em;
+}
+.fa-chevron-left {
+  margin: 0px 15px 0px 0px;
+}
+
+.fa-chevron-right {
+  margin: 5px;
+  font-size: 0.7em;
+}
+
+.navigation__active {
+  font-weight: bold;
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -246,24 +264,67 @@ footer {
 
 .listofjackets-background-title {
   font-size: 3em;
+  font-weight: 100;
   margin: 0px;
   position: absolute;
-  left: 50px;
+  left: 30px;
   bottom: 80px;
 }
 
-.listofjackets-jackets {
+.listofjackets-select {
   display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+
+.listofjackets-select__type {
+  border: solid 1px #3c67a3;
+  font-size: 0.8em;
+  height: 20px;
+  width: 65px;
+  padding: 3px;
+}
+
+.fa-chevron-down {
+  color: #4f98ff;
+  padding: 0px 0px 0px 3px;
+  font-size: 1.2em;
+}
+
+.listofjackets-jackets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin: 0px 20px 40px 20px;
 }
 
 .listofjackets-jackets__spesific {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  flex-basis: min-content;
+  flex-basis: 21%;
+  position: relative;
+  margin: 10px;
+}
+
+.listofjackets-jackets__new {
+  position: absolute;
+  border: solid #f7ad1e 2px;
+  background-color: white;
+  left: 5px;
+  top: 5px;
+}
+.listofjackets-jackets__new-text {
+  margin: 0px 13px;
+  color: #f7ad1e;
+}
+
+.listofjackets-jackets__name-price {
+  margin: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.listofjackets-jackets__description {
+  margin: 5px;
+  font-size: 0.7em;
 }
 
 /* Jacket specific
@@ -271,6 +332,24 @@ footer {
 
 /* Media Queries
 --------------------------------------------------*/
+@media (max-width: 599px) {
+  .img-about-us {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .img-about-us__climbing {
+    display: none;
+  }
+
+  .about-us__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
 
 @media (min-width: 600px) and (max-width: 899px) {
   .home-new-collection__content {
@@ -279,6 +358,7 @@ footer {
     height: 140px;
     width: 240px;
   }
+
   .shop-by-category__content-info {
     bottom: 40px;
     right: 40px;
@@ -305,6 +385,54 @@ footer {
   .fa,
   .fas {
     font-size: 1.4em;
+  }
+
+  .fa-chevron-right {
+    font-size: 0.7em;
+  }
+
+  .listofjackets-background-title {
+    font-size: 5em;
+    bottom: 65px;
+  }
+
+  .listofjackets-jackets {
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  }
+
+  .listofjackets-jackets__name-price {
+    font-size: 1em;
+  }
+
+  .listofjackets-jackets__description {
+    font-size: 0.8em;
+  }
+
+  .listofjackets-select__type {
+    font-size: 0.9em;
+    height: 25px;
+    width: 80px;
+  }
+
+  .listofjackets-background-img {
+    background-position-y: top;
+  }
+
+  .img-about-us {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .img-about-us__climbing {
+    display: none;
+  }
+
+  .about-us__text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 }
 
@@ -356,6 +484,7 @@ footer {
     height: 160px;
     width: 315px;
   }
+
   .shop-by-category {
     display: flex;
     flex-direction: row;
@@ -394,5 +523,61 @@ footer {
   .fa,
   .fas {
     font-size: 1.4em;
+  }
+
+  .fa-chevron-right {
+    font-size: 0.7em;
+  }
+
+  .listofjackets-background-title {
+    font-size: 6em;
+    bottom: 55px;
+  }
+
+  .listofjackets-jackets {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    margin: 0px 50px;
+  }
+
+  .listofjackets-select {
+    margin: 0px 60px;
+  }
+
+  .listofjackets-jackets__name-price {
+    font-size: 1.2em;
+  }
+
+  .listofjackets-jackets__description {
+    font-size: 0.9em;
+  }
+
+  .listofjackets-select__type {
+    font-size: 1em;
+    height: 25px;
+    width: 100px;
+  }
+
+  .listofjackets-background-img {
+    background-position-y: -120px;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+
+  .about-us__text {
+    max-width: 500px;
+  }
+
+  .img-about-us {
+    position: absolute;
+    right: 5%;
+  }
+
+  .img-about-us__climbing {
+    width: 30%;
+    margin: 30px;
   }
 }
