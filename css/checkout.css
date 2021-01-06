@@ -1,0 +1,15 @@
+.checkout__information-personal {
+    display: block;
+}
+
+.cta-checkout {
+    background-color: #f7ad1e;
+    border: solid #f7ad1e 2px;
+    font-size: 1.5em;
+    padding: 2px 30px;
+    margin: 20px 40px 50px 40px;
+    width: 310px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: white;
+}

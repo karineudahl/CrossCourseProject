@@ -26,7 +26,7 @@
                     </div>
                     <div class="header-icons">
                         <i class="fas fa-search"></i>
-                        <i class="fas fa-shopping-bag"></i>
+                        <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
                     </div>
                 </div>
                 <nav class="header-second-line">  
@@ -45,6 +45,27 @@
             </div>
         </header>
         <main>
+            <p>Summary</p>
+            
+            <p>Complete order</p>
+            <form action="submit.php" method="POST" >
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" class="checkout__information-personal" required>
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name" class="checkout__information-personal" required>
+                <label for="adress">Home adress</label>
+                <input type="text" name="adress" id="adress" class="checkout__information-personal" required>
+                <label for="code">Code</label>
+                <input type="number" name="code" id="code" class="checkout__information-personal" required>
+                <label for="town">Town</label>
+                <input type="text" name="town" id="town" class="checkout__information-personal" required>
+                <label for="mail">Mail adress</label>
+                <input type="text" name="mail" id="mail" class="checkout__information-personal" required>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" class="checkout__information-personal" required>  
+            </form>
+            <input type="submit" value="Purchase" class="cta-checkout">
+
         </main>
         <footer>
             <div class="footer-links">
