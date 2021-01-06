@@ -1,0 +1,38 @@
+.contact-text {
+    padding: 10px 40px;
+} 
+
+.contact-text__bold {
+  font-weight:bolder;
+}
+
+.contact-text__content {
+  margin: 0px;
+}
+
+.form-contact {
+    margin: 0px 40px;
+  }
+
+.form-contact__input {
+    display: block;
+    width: 300px;
+    height: 20px;
+    margin: 0px 0px 15px 0px;
+  }
+
+.form-contact__message {
+  display: block;
+}
+
+.cta-contact {
+  background-color: #f7ad1e;
+  border: solid #f7ad1e 2px;
+  font-size: 1.5em;
+  padding: 2px 30px;
+  margin: 20px 40px 50px 40px;
+  width: 310px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  color: white;
+}
