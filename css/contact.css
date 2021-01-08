@@ -1,5 +1,5 @@
 .contact-text {
-    padding: 10px 40px;
+  padding: 10px 40px;
 } 
 
 .contact-text__bold {
@@ -11,15 +11,15 @@
 }
 
 .form-contact {
-    margin: 0px 40px;
-  }
+  margin: 0px 40px;
+}
 
 .form-contact__input {
-    display: block;
-    width: 300px;
-    height: 20px;
-    margin: 0px 0px 15px 0px;
-  }
+  display: block;
+  width: 300px;
+  height: 20px;
+  margin: 0px 0px 15px 0px;
+}
 
 .form-contact__message {
   display: block;

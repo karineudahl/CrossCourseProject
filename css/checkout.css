@@ -1,8 +1,61 @@
-.checkout__information-personal {
-    display: block;
+.checkout__headlines {
+    background-color: #001026;
+    color: white;
+    margin: 10px 20px;
+    padding: 5px;
 }
 
-.cta-checkout {
+.checkout__shopping-bag {
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px;
+    padding: 10px 5px;
+}
+
+.img__shopping-bag {
+    height: 35px;
+}
+
+.checkout__discount-code {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px;
+    padding: 20px 10px;
+    margin: 10px 20px;
+}
+
+.checkout__discount-field {
+    flex-grow: 1
+}
+
+.cta-checkout__ok {
+    background-color: #001026;
+    border: none;
+    font-size: 1.4em;
+    color: white;
+    padding: 2px 15px;
+    margin-left: 10px;
+}
+
+.checkout__summary {
+    margin: 0px 20px;
+    border: solid 1px;
+}
+
+.checkout__summary-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+}
+
+.checkout__summary-text {
+    font-weight:bolder;
+}
+
+.cta-checkout__purchase {
     background-color: #f7ad1e;
     border: solid #f7ad1e 2px;
     font-size: 1.5em;

@@ -45,35 +45,61 @@
             </div>
         </header>
         <main>
-            <p>Discount code</p>
-            
-            <p>Summary</p>
-            <div>
-                <p>Summary:</p>
-                <p>1 499,-</p>
-            </div>
-            <div>
-                <p>Total inkl mva:</p>
-                <p>1 499,-</p>
-            </div>
-            <p>Complete order</p>
-            <form action="submit.php" method="POST" >
-                <label for="first-name">First name</label>
-                <input type="text" name="first-name" id="first-name" class="checkout__information-personal" required>
-                <label for="last-name">Last name</label>
-                <input type="text" name="last-name" id="last-name" class="checkout__information-personal" required>
-                <label for="adress">Home adress</label>
-                <input type="text" name="adress" id="adress" class="checkout__information-personal" required>
-                <label for="code">Code</label>
-                <input type="number" name="code" id="code" class="checkout__information-personal" required>
-                <label for="town">Town</label>
-                <input type="text" name="town" id="town" class="checkout__information-personal" required>
-                <label for="mail">Mail adress</label>
-                <input type="text" name="mail" id="mail" class="checkout__information-personal" required>
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" class="checkout__information-personal" required>  
+            <nav class="navigation">
+                <li><a href="index.html"><i class="fas fa-chevron-left"></i></a></li> 
+                <li><a href="index.html">Home</a></li> 
+                <i class="fas fa-chevron-right"></i>
+                <li><a class="navigation__active"href="checkout.html">Check out</a></li>
+            </nav>
+            <section>
+                <p class="checkout__headlines">Your shopping bag</p>
+                <div class="checkout__shopping-bag">
+                    <img src="images/jacket-lofoten.jpg" alt="picture of Lofoten jacket you are planning to buy" class=img__shopping-bag>
+                    <p>Lofoten jacket - M</p>
+                    <i class="fas fa-minus-circle"></i>
+                    <p>1</p>
+                    <i class="fas fa-plus-circle"></i>
+                    <p>1 499,-</p>
+                </div>
+            </section>
+            <section>
+                <p class="checkout__headlines">Discount code</p>
+                <div class="checkout__discount-code">
+                    <input type="number" name=discount-code id="discount-code" placeholder="Type code" class="checkout__discount-field">
+                    <input type="submit" value="OK" class="cta-checkout__ok">
+                </div>
+            </section>
+            <section>
+                <p class="checkout__headlines">Summary</p>
+                <div class="checkout__summary">
+                    <div class="checkout__summary-content">
+                        <p class="checkout__summary-text">Summary:</p>
+                        <p>1 499,-</p>
+                    </div>
+                    <div class="checkout__summary-content">
+                        <p class="checkout__summary-text">Total inkl mva:</p>
+                        <p>1 499,-</p>
+                    </div>
+                </div>       
+            </section>
+            <p class="checkout__headlines">Complete order</p>
+            <form action="submit.php" method="POST" class="">
+                    <label for="first-name">First name *</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                    <label for="last-name">Last name *</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                    <label for="adress">Home adress *</label>
+                    <input type="text" name="adress" id="adress" placeholder="Home adress" required>
+                    <label for="code">Code *</label>
+                    <input type="number" name="code" id="code" placeholder="Code" required>
+                    <label for="town">Town *</label>
+                    <input type="text" name="town" id="town" placeholder="Town" required>
+                    <label for="mail">Mail adress *</label>
+                    <input type="text" name="mail" id="mail" placeholder="Mail adress" required>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone"> 
             </form>
-            <input type="submit" value="Purchase" class="cta-checkout">
+            <input type="submit" value="Purchase" class="cta-checkout__purchase">
 
         </main>
         <footer>
