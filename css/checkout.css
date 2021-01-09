@@ -16,6 +16,8 @@
 
 .img__shopping-bag {
     height: 35px;
+    border: solid 1px;
+    padding: 10px 5px;
 }
 
 .checkout__discount-code {
@@ -55,14 +57,35 @@
     font-weight:bolder;
 }
 
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.checkout__form-input {
+    margin: 0px 0px 10px 0px;
+    padding: 7px;
+    border: black solid 1px;
+}
+
 .cta-checkout__purchase {
+    display: flex;
+}
+
+.cta-checkout__purchase-cta {
     background-color: #f7ad1e;
     border: solid #f7ad1e 2px;
     font-size: 1.5em;
     padding: 2px 30px;
-    margin: 20px 40px 50px 40px;
-    width: 310px;
+    margin: 20px 20px 50px 20px;
     text-transform: uppercase;
     border-radius: 20px;
     color: white;
+    flex-grow: 1;
 }
+
+.checkout {
+    display: grid;
+}
+
