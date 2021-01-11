@@ -116,6 +116,11 @@
     .checkout {
       margin: 0px 50px;
     }
+
+    .jacketspesific-first-box {
+      display: flex;
+      justify-content: center;
+    }
   }
   
 @media (min-width: 900px) {
@@ -286,4 +291,14 @@
       margin: 10px;
     }
 
+    .jacketspesific-first-box, 
+    .jacketspesific-second-box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .jacketspesific__about {
+      width: 400px;
+      margin: 35px 5px;    
+    }
   }

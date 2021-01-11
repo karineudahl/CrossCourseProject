@@ -1,0 +1,66 @@
+.img__jacketspesific {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img__jacketspesific__large {
+    height: 200px;
+}
+
+.img__jacketspesific__small-styling {
+    border: solid 1px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.jacketspesific__info {
+    margin: 30px 30px 10px 30px;
+}
+
+.jacketspesific__info-text {
+    margin: 0px;
+}
+
+.fa-stop {
+    margin-right: 5px;
+}
+
+.jacketspesific__color {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-top: 20px;
+}
+
+.jacketspesific__size {
+    display: flex;
+}
+
+.jacketspesific__size-style {
+    border: solid 1px;
+    width: 20px;
+    text-align: center;
+    margin-right: 4px;
+    padding: 10px;
+}
+
+.cta__add-to-cart {
+    background-color: #FAAB42;
+    border: solid #FAAB42 2px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: white;
+}
+
+.jacketspesific__about {
+    margin: 30px;
+    border: solid 1px;
+    padding: 0px 10px;
+}
+
+.fa-star {
+    color: #F7AD1E;
+}
