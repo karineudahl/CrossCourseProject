@@ -1,3 +1,7 @@
+.checkout-text {
+    margin: 0px 60px;
+}
+
 .checkout__headlines {
     background-color: #001026;
     color: white;
@@ -71,6 +75,7 @@
 
 .cta-checkout__purchase {
     display: flex;
+    justify-content: center;
 }
 
 .cta-checkout__purchase-cta {

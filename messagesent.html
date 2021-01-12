@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Rainydays | Contact</title>
-        <meta name="description" content="How to get in touch with Rainydays">
+        <title>Rainydays | Message Sent</title>
+        <meta name="description" content="Your message has been sent to Rainydays">
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
@@ -47,37 +47,11 @@
                 </nav>
             </div>
         </header>
-        <main>
-            <nav class="navigation">
-                <li><a href="index.html"><i class="fas fa-chevron-left"></i></a></li> 
-                <li><a href="index.html">Home</a></li> 
-                <i class="fas fa-chevron-right"></i>
-                <li><a class="navigation__active"href="contact.html">Contact us</a></li>
-            </nav>
-            <div class="contact-text">
-                <h1>Contact us</h1>
-                <text class="contact-text__bold">Call us</text>
-                <p class="contact-text__content">09:00-14:00</p>
-                <p class="contact-text__content">Phone 99 99 99 99</p>
-            </div>
-            <div class="contact-text">
-                <text class="contact-text__bold">Contact form</text>
-            </div>         
-            <form action="submit.php" method="POST">
-                <div class="form-contact">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-contact__input" required>
-                    <label for="email">Mail</label>
-                    <input type="text" name="email" id="email" class="form-contact__input" required>
-                    <label for="phone">Phone</label>
-                    <input type="tel" name="phone" id="phone" class="form-contact__input" required>    
-                </div>
-                <div class="form-contact">
-                    <label for="message" class="form-contact__message">Message</label>
-                    <textarea name="message" id="message" cols="37" rows="15"></textarea>
-                </div>
-                <a href="messagesent.html"><input type="submit" value="Send" class="cta-contact"></a>
-            </form>
+        <main class="message-sent">
+            <p>Message sent</p>
+            <img src="images/check-out-success.jpg" alt="picure of a success symbol" class="img__message-sent">
+            <p>We will answer you as soon as possible</p>
+            <a href="contact.html" class="cta__message-sent">OK</a>
         </main>
         <footer>
             <div class="footer-links">
