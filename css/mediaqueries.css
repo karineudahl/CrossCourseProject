@@ -16,7 +16,7 @@
   }
 
   .fa-bars {
-    margin-right: 80px;
+    margin-right: 60px;
   }
 
   .hamburger-links ul {
@@ -25,7 +25,7 @@
     position: absolute;
     z-index: 1;
     background-color: white;
-    margin: 20px -172px;
+    margin: 10px -200px;
     width: 300px;
     padding: 20px 0px;
     text-transform: uppercase;
@@ -75,7 +75,7 @@
   }
 
   .fa-bars {
-    margin-right: 80px;
+    margin-right: 45px;
   }
 
   .hamburger-links ul {
@@ -84,7 +84,7 @@
     position: absolute;
     z-index: 1;
     background-color: white;
-    margin: 20px -170px;
+    margin: 10px -215px;
     width: 300px;
     padding: 20px 0px;
     text-transform: uppercase;
@@ -92,10 +92,6 @@
 
   .hamburger-links-link {
     padding: 10px 10px 15px 30px;
-  }
-
-  .hamburger-links-link:hover {
-    color: red;
   }
 
   .home-new-collection__content {
@@ -111,14 +107,6 @@
 
   .pushing-the-comfort-zone__content {
     font-size: 4em;
-  }
-
-  .fa-instagram,
-  .fa-facebook-f,
-  .fa-snapchat-ghost,
-  .fa,
-  .fas {
-    font-size: 1.4em;
   }
 
   .fa-chevron-right {
@@ -169,10 +157,6 @@
     width: 50%;
   }
 
-  .checkout {
-    margin: 0px 50px;
-  }
-
   .jacketspesific-first-box {
     display: flex;
     justify-content: center;
@@ -191,7 +175,7 @@
 
   .header-links__big-screen {
     display: inline;
-    margin-right: 80px;
+    margin-right: 34px;
   }
 
   .header-links {
@@ -231,14 +215,6 @@
 
   .footer-links {
     font-size: 0.9em;
-  }
-
-  .fa-instagram,
-  .fa-facebook-f,
-  .fa-snapchat-ghost,
-  .fa,
-  .fas {
-    font-size: 1.4em;
   }
 
   .fa-chevron-right {
@@ -295,17 +271,6 @@
   .img-about-us__climbing {
     width: 30%;
     margin: 30px;
-  }
-
-  .checkout {
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    margin: 20px 50px;
-  }
-
-  .checkout_mediaqueries {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
   }
 
   .jacketspesific-first-box,

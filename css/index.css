@@ -27,11 +27,11 @@
 }
 
 .cta-homepage {
-  color: #3c67a3;
+  color: #103867;
   font-size: 1.5em;
   padding: 5px 30px;
   text-transform: uppercase;
-  border: solid #3c67a3 2px;
+  border: solid #103867 2px;
   border-radius: 20px;
   background-color: white;
 }
@@ -43,6 +43,7 @@
 .shop-by-category__content {
   position: relative;
 }
+
 .shop-by-category__content-info {
   position: absolute;
   text-align: center;

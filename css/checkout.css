@@ -1,96 +1,44 @@
-.checkout-text {
-    margin: 0px 60px;
-}
-
-.checkout__headlines {
-    background-color: #001026;
-    color: white;
-    margin: 10px 20px;
-    padding: 5px;
-}
-
-.checkout__shopping-bag {
-    display: flex;
-    margin: 0px 20px;
-    justify-content: space-between;
-    align-items: center;
-    border: solid 1px;
-    padding: 10px 5px;
-}
-
-.img__shopping-bag {
-    height: 35px;
-    border: solid 1px;
-    padding: 10px 5px;
-}
-
-.checkout__discount-code {
-    display: flex;
-    justify-content: space-between;
-    border: solid 1px;
-    padding: 20px 10px;
-    margin: 10px 20px;
-}
-
-.checkout__discount-field {
-    flex-grow: 1
-}
-
-.cta-checkout__ok {
-    background-color: #001026;
-    border: none;
-    font-size: 1.4em;
-    color: white;
-    padding: 2px 15px;
-    margin-left: 10px;
-}
-
-.checkout__summary {
-    margin: 0px 20px;
-    border: solid 1px;
-}
-
-.checkout__summary-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 15px;
-}
-
-.checkout__summary-text {
-    font-weight:bolder;
-}
-
-.checkout__form {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 20px;
-}
-
-.checkout__form-input {
-    margin: 0px 0px 10px 0px;
-    padding: 7px;
-    border: black solid 1px;
-}
-
-.cta-checkout__purchase {
-    display: flex;
-    justify-content: center;
-}
-
-.cta-checkout__purchase-cta {
-    background-color: #FAAB42;
-    border: solid #FAAB42 2px;
-    font-size: 1.5em;
-    padding: 2px 30px;
-    margin: 20px 20px 50px 20px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    color: white;
-    flex-grow: 1;
-}
-
 .checkout {
-    display: grid;
+  margin: 40px;
 }
 
+form {
+  max-width: 600px;
+  margin-bottom: 150px;
+}
+
+.order-container {
+  display: flex;
+}
+
+.order-container-fields {
+  position: relative;
+  margin: 0px 15px 20px 0px;
+  width: 100%;
+}
+
+.order-label {
+  position: absolute;
+  top: 0px;
+  left: 3px;
+}
+
+.order-input {
+  height: 40px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+  padding: 10px 0px 0px 5px;
+}
+
+.cta-checkout {
+  background-color: #faab42;
+  border: none;
+  font-size: 1em;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+}

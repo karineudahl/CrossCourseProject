@@ -34,13 +34,13 @@ form {
 }
 
 .cta-contact {
-  background-color: #f7ad1e;
-  font-size: 1.2em;
-  padding: 7px;
-  border-radius: 20px;
+  background-color: #faab42;
+  font-size: 1em;
+  padding: 7px 30px;
+  border-radius: 10px;
   color: white;
   border: none;
-  width: 100%;
+  text-transform: uppercase;
 }
 
 .form-error {
