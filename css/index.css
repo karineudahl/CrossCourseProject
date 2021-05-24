@@ -1,97 +1,78 @@
 .img-general {
-    width: 100%;
-    display: block;
-  }
-  
+  width: 100%;
+  display: block;
+}
+
 .home-new-collection {
-    background-image: url(../images/before-climbing.jpg);
-    min-height: 50vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    min-width: 100%;
-  }
-  
+  background-image: url(../images/before-climbing.jpg);
+  min-height: 50vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  min-width: 100%;
+}
+
 .home-new-collection__content {
-    position: absolute;
-    text-align: center;
-    bottom: 20px;
-    right: 20px;
-    font-size: 0.5em;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    height: 90px;
-    width: 160px;
-  }
-  
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  right: 20px;
+  font-size: 0.7em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  height: 140px;
+  width: 220px;
+}
+
 .cta-homepage {
-    color: #f7ad1e;
-    font-size: 1.5em;
-    padding: 5px 30px;
-    text-transform: uppercase;
-    border: solid #f7ad1e 2px;
-    border-radius: 20px;
-    background-color: white;
-  }
+  color: #3c67a3;
+  font-size: 1.5em;
+  padding: 5px 30px;
+  text-transform: uppercase;
+  border: solid #3c67a3 2px;
+  border-radius: 20px;
+  background-color: white;
+}
 
 .shop-by-category {
-    position: relative;
-  }
-  
+  position: relative;
+}
+
 .shop-by-category__content {
-    position: relative;
-  }
+  position: relative;
+}
 .shop-by-category__content-info {
-    position: absolute;
-    text-align: center;
-    bottom: 20px;
-    right: 20px;
-    font-size: 0.5em;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    height: 80px;
-    width: 160px;
-  }
-  
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 140px;
+  width: 100%;
+}
+
+.instagram {
+  margin: 100px 0px;
+}
+
 .instagram-text {
-    text-align: center;
-    font-size: 0.9em;
-  }
-  
+  text-align: center;
+  font-size: 0.9em;
+}
+
 .img-instagram {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 2px;
-    margin: 20px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 20px 20px 80px 20px;
+}
+
 .img-instagram__container {
-    width: 100%;
-  }
-  
+  width: 100%;
+}
+
 .img-instagram__container img {
-    width: 100%;
-  }
-  
-.pushing-the-comfort-zone {
-    background-image: url("../images/snow-mountain.jpg");
-    min-height: 50vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    margin: 35px 0px 0px 0px;
-  }
-  
-.pushing-the-comfort-zone__content {
-    position: absolute;
-    text-align: center;
-    top: 20%;
-    left: 50%;
-    transform: translatex(-50%);
-    font-size: 2.5em;
-  }
-  
+  width: 100%;
+}

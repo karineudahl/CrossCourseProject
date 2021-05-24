@@ -1,77 +1,65 @@
-
 .listofjackets-background-img {
-    background-image: url(../images/people-mountain.jpg);
-    min-height: 35vh;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
-  }
-  
+  background-image: url(../images/people-mountain.jpg);
+  min-height: 35vh;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  margin: 20px 0px 70px 0px;
+}
+
 .listofjackets-background-title {
-    font-size: 3em;
-    font-weight: 100;
-    margin: 0px;
-    position: absolute;
-    left: 30px;
-    bottom: 80px;
-  }
-  
-.listofjackets-select {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 30px;
-  }
-  
-.listofjackets-select__type {
-    border: solid 1px #3c67a3;
-    font-size: 0.8em;
-    height: 20px;
-    width: 65px;
-    padding: 3px;
-  }
-  
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0px;
+  position: absolute;
+  left: 30px;
+  bottom: 80px;
+}
+
 .fa-chevron-down {
-    color: #4f98ff;
-    padding: 0px 0px 0px 3px;
-    font-size: 1.2em;
-  }
-  
+  color: #4f98ff;
+  padding: 0px 0px 0px 3px;
+  font-size: 1.2em;
+}
+
 .listofjackets-jackets {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    margin: 0px 20px 40px 20px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin: 0px 20px 40px 20px;
+}
+
 .listofjackets-jackets__spesific {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 21%;
-    position: relative;
-    margin: 10px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  flex-basis: 21%;
+  position: relative;
+  margin: 30px;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+
 .listofjackets-jackets__new {
-    position: absolute;
-    border: solid #f7ad1e 2px;
-    background-color: white;
-    left: 5px;
-    top: 5px;
-  }
-  
+  position: absolute;
+  border: solid #f7ad1e 2px;
+  background-color: white;
+  left: 5px;
+  top: 5px;
+}
+
 .listofjackets-jackets__new-text {
-    margin: 0px 13px;
-    color: #f7ad1e;
-  }
-  
+  margin: 0px 13px;
+  color: #f7ad1e;
+}
+
 .listofjackets-jackets__name-price {
-    margin: 5px;
-    font-size: 0.8em;
-    font-weight: bold;
-  }
+  margin: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
 
 .listofjackets-jackets__description {
-    margin: 5px;
-    font-size: 0.7em;
-  }
+  margin: 5px;
+  font-size: 0.7em;
+}

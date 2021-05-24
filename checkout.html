@@ -7,16 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/index.css" rel="stylesheet">
-        <link href="css/listofjackets.css" rel="stylesheet">
-        <link href="css/jacketspesific.css" rel="stylesheet">
-        <link href="css/contact.css" rel="stylesheet">
         <link href="css/checkout.css" rel="stylesheet">
-        <link href="css/checkout-success.css" rel="stylesheet">
-        <link href="css/about.css" rel="stylesheet">
-        <link href="css/search.css" rel="stylesheet">
-        <link href="css/addtocart.css" rel="stylesheet">
-        <link href="css/messagesent.css" rel="stylesheet">
         <link href="css/mediaqueries.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
         <!-- Hotjar Tracking Code for https://friendly-colden-d1ab7e.netlify.app/index.html -->
@@ -33,37 +24,41 @@
     </head>
     <body>
         <header>
-            <div class="header-full-screen">
-                <div class="header-first-line">
-                    <div>
-                        <a href="index.html"><img src="../images/logo.png" alt="logo" class=logo></a>
-                    </div>
-                    <div class="header-icons">
-                        <a href="search.html"><i class="fas fa-search"></i></a>
-                        <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
-                    </div>
-                </div>
-                <nav class="header-second-line">  
+            <div>
+                <a href="index.html"><img src="images/Logo.png" class="img-logo" alt="logo contains a mountain with snow and the title Rainydays, pushing the comfort zone"></a>
+            </div>
+            <div class="header-links__small-screen">
+                <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                <nav class="hamburger-links">
                     <ul>
-                        <li><a class="header-links" href="listofjackets.html">Men</a></li>
-                        <li><a class="header-links" href="listofjackets.html">Women</a></li>
-                        <li><a class="header-links" href="listofjackets.html">Junior</a></li>
-                    </ul>
-                </nav> 
-                <nav class="header-third-line">
-                    <ul>
-                        <li><a class="header-links-ekstra" href="about.html">About us</a></li>
-                        <li><a class="header-links-ekstra" href="contact.html">Contact us</a></li>
+                        <li class="hamburger-links-link"><a href="listofjackets.html">Women</a></li>
+                        <li class="hamburger-links-link"><a href="listofjackets.html">Men</a></li>
+                        <li class="hamburger-links-link"><a href="listofjackets.html">Junior</a></li>
+                        <li class="hamburger-links-link"><a href="about.html">About</a></li>
+                        <li class="hamburger-links-link"><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            </div>  
+            <nav class="header-links__big-screen">
+                <ul>
+                    <li class="header-links"><a href="listofjackets.html">Women</a></li>
+                    <li class="header-links"><a href="listofjackets.html">Men</a></li>
+                    <li class="header-links"><a href="listofjackets.html">Junior</a></li>
+                    <li class="header-links"><a href="about.html">About</a></li>
+                    <li class="header-links"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav> 
+            <div class="header-icon">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
             </div>
         </header>
         <main>
             <nav class="navigation">
-                <li><a href="index.html"><i class="fas fa-chevron-left"></i></a></li> 
-                <li><a href="index.html">Home</a></li> 
+                <a href="index.html">Home</a></li> 
                 <i class="fas fa-chevron-right"></i>
-                <li><a class="navigation__active"href="checkout.html">Check out</a></li>
+                <a class="navigation__active"href="checkout.html">Check out</a>
             </nav>
             <h1 class="checkout-text">Check out</h1>
             <section class="checkout">
@@ -123,19 +118,63 @@
             </section>           
         </main>
         <footer>
-            <div class="footer-links">
-                <div>
-                    <a href="contact.html">Contact us</a>
-                </div>
-                <div>
-                    <a href="about.html">About us</a>
+            <div class="footer-container">
+                <h3><i class="fas fa-grip-lines-vertical"></i>Contact us</h3>
+                <p>Rainydays</p>
+                <p>Hakkebakkeskogen 1</p> 
+                <p>0202 Oslo</p> 
+                <p>Tlf: 99 99 99 99</p>
+            </div>
+            <div class="footer-container">
+                <h3><i class="fas fa-grip-lines-vertical"></i>Opening Hours</h3>
+                <table>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>10:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>10:00 – 19:00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 – 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Closed</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-container">
+                <h3><i class="fas fa-grip-lines-vertical"></i>Shortcuts</h3>
+                <nav class="footer-links">
+                    <ul>
+                        <li class="footer-links__link"><a href="about.html">About us</a></li>
+                        <li class="footer-links__link"><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-container">
+                <h3><i class="fas fa-grip-lines-vertical"></i>Sosial Media</h3>
+                <div class="footer-some">
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a> 
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.snapchat.com/l/nb-no/"><i class="fab fa-snapchat-ghost"></i></a>
                 </div>
             </div>
-            <div class="footer-some">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-snapchat-ghost"></i>
-            </div>
-        </footer>
+        </footer> 
     </body>
 </html>
