@@ -1,11 +1,12 @@
 const form = document.querySelector("#form");
 const name = document.querySelector("#name");
-const nameError = document.querySelector("nameError");
+const nameError = document.querySelector("#nameError");
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#emailError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
-
+const messageSuccess = document.querySelector("#messageSucess");
+ 
 function validateForm() {
     event.preventDefault(); 
 
@@ -26,6 +27,7 @@ function validateForm() {
     } else {
         messageError.style.display = "block";
     }
+
 }
 
 form.addEventListener("submit", validateForm);
@@ -44,3 +46,16 @@ function checkEmail(email) {
     const patternMatches = regEx.test(email);
     return patternMatches;
 }
+
+function messageSubmit(event) {
+    event.preventDefault(); 
+    if(checkLength(name.value, 0) && checkEmail(email.value) && checkLength(message.value, 0)) {
+        messageSuccess.innerHTML = `<div class="message-success">
+                                        <p>Message sent.</p>
+                                        <p>We will contact you as soon as possible.</p>
+                                    </div>`;
+        form.reset();
+    }
+}
+
+form.addEventListener("submit", messageSubmit);

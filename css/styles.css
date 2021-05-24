@@ -72,12 +72,20 @@ header {
   right: 0px;
 }
 
+.search-input {
+  padding: 5px 10px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: solid 1px #103867;
+}
+
 .navigation {
   margin: 30px;
   display: flex;
 }
 
-.navigation a {
+.navigation-link {
   text-decoration: underline;
 }
 
