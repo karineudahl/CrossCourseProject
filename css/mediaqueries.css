@@ -38,23 +38,6 @@
   .hamburger-links-link:hover {
     color: red;
   }
-
-  .img-about-us {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-  .img-about-us__climbing {
-    display: none;
-  }
-
-  .about-us__text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
@@ -138,23 +121,6 @@
 
   .listofjackets-background-img {
     background-position-y: top;
-  }
-
-  .img-about-us {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-
-  .img-about-us__climbing {
-    display: none;
-  }
-
-  .about-us__text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
   }
 
   .jacketspesific-first-box {
@@ -251,26 +217,6 @@
 
   .listofjackets-background-img {
     background-position-y: -120px;
-  }
-
-  .about-us {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-  }
-
-  .about-us__text {
-    max-width: 500px;
-  }
-
-  .img-about-us {
-    position: absolute;
-    right: 5%;
-  }
-
-  .img-about-us__climbing {
-    width: 30%;
-    margin: 30px;
   }
 
   .jacketspesific-first-box,

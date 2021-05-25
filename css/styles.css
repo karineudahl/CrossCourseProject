@@ -4,10 +4,7 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-
-h1 {
-  font-size: 2em;
+  font-family: "PT serif", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -17,9 +14,7 @@ h2 {
 }
 
 h3,
-a,
 p {
-  font-family: "PT serif", Verdana, Geneva, Tahoma, sans-serif;
   color: #191c20;
 }
 

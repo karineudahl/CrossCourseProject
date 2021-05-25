@@ -47,8 +47,8 @@
                     <li class="header-links"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav> 
-            <div class="header-icon">
-                <a href="checkout.html"><i class="fas fa-shopping-bag"></i></a>
+            <div class="cart">
+                <a href="checkout.html"><i class="fas fa-shopping-bag"><span class="cart-count">0</span></i></a>
             </div>
         </header>
         <main>
@@ -63,46 +63,33 @@
                 <i class="fas fa-chevron-right"></i>
                 <a href="jacketspesific.html">Lofoten Jacket</a>   
             </nav>
-            <section class="jacketspesific-first-box">
-                <section class="img__jacketspesific">
+            <div class="jacketspesific-first-box">
+                <div class="img__jacketspesific">
                     <img src="images/jacket-lofoten.jpg" alt="picture of a blue Lofoten jacket" class="img__jacketspesific__large">
-                    <div class="img__jacketspesific__small">
-                        <img src="images/jacket-lofoten.jpg" alt="blue Lofoten jacket" class="img__jacketspesific__small-styling">
-                        <img src="images/jacket-lofoten.jpg" alt="blue Lofoten jacket" class="img__jacketspesific__small-styling">
-                        <img src="images/jacket-lofoten.jpg" alt="blue Lofoten jacket" class="img__jacketspesific__small-styling">
-                        <img src="images/jacket-lofoten.jpg" alt="blue Lofoten jacket" class="img__jacketspesific__small-styling">
+                </div>
+                <div class="jacketspesific__info">
+                    <div>
+                        <h1>Lofoten Jacket</h1>
+                        <p>Gore Tex</p>
+                        <p>1 499,-</p>
                     </div>
-                </section>
-                <section class="jacketspesific__info">
-                    <section>
-                        <h1 class="jacketspesific__info-text">Lofoten Jacket</h1>
-                        <p class="jacketspesific__info-text">Gore Tex</p>
-                        <p class="jacketspesific__info-text">1 499,-</p>
-                    </section>
-                    <section class="jacketspesific__color">
-                        <p class="jacketspesific__info-text"><i class="fas fa-stop" style="color: #FFB830"></i>Yellow</p> 
-                        <p class="jacketspesific__info-text"><i class="fas fa-stop" style="color: #3BB2FF"></i>Light blue</p>
-                        <p class="jacketspesific__info-text"><i class="fas fa-stop" style="color: #3C67A3"></i>Dark blue</p> 
-                        <p class="jacketspesific__info-text"><i class="fas fa-stop" style="color: #000000"></i>Black</p>
-                    </section>
-                    <section class="jacketspesific__size">
+
+                    <div class="jacketspesific__size">
                         <p>XS</p>
                         <p>S</p>
                         <p>M</p>
                         <p>L</p>
                         <p>XL</p>
-                    </section>
-                    <section>
-                        <a href="addtocart.html"><input type="text" value="Add to cart" class="cta__add-to-cart"></a>
-                    </section>
-                </section>        
-            </section>
-            <section class="jacketspesific-second-box">
-                <section class="jacketspesific__about">
+                    </div>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>        
+            </div>
+            <div class="jacketspesific-second-box">
+                <div class="jacketspesific__about">
                     <h2>About Lofoten Jacket</h2>
                     <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibus</p>
-                </section>
-                <section class="jacketspesific__about">
+                </div>
+                <div class="jacketspesific__about">
                     <h2>Review Lofoten Jacket</h2>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -110,8 +97,8 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                     <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. </p>
-                </section>
-            </section> 
+                </div>
+            </div> 
         </main>
         <footer>
             <div class="footer-container">
@@ -172,5 +159,7 @@
                 </div>
             </div>
         </footer> 
+
+        <script src="js/cart.js"></script>
     </body>
 </html>

@@ -1,0 +1,9 @@
+.about {
+  max-width: 600px;
+  margin: 50px;
+}
+
+.about-contact {
+  text-decoration: underline;
+  font-size: 1.3em;
+}
