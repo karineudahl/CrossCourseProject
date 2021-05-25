@@ -12,7 +12,7 @@ let products = [
 
 for (let i = 0; i < addToCarts.length; i++) {
     addToCarts[i].addEventListener("click", () => {
-        cartNumbers()
+        cartNumbers(products[i]);
     })
 }
 
@@ -24,7 +24,7 @@ function cartCountCheck() {
     }
 }
 
-function cartNumbers() {
+function cartNumbers(product) {
     let productNumbers = localStorage.getItem("cartNumbers");
 
     productNumbers = parseInt(productNumbers);
@@ -37,6 +37,13 @@ function cartNumbers() {
         localStorage.setItem("cartNumbers", 1);
         cartCount.innerHTML = `1`;
     }
+
+    setItems(product);
+}
+
+function setItems(product) {
+    console.log("Inside of setItems"); 
+    console.log("My product is", product);
 }
 
 cartCountCheck();
