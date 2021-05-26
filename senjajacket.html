@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Rainydays | Checkout</title>
-        <meta name="description" content="Checkout page with the product you have choosen">
+        <title>Rainydays | Lofoten Jacket</title>
+        <meta name="description" content="Lofoten Jacket for a good price">
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/checkout.css" rel="stylesheet">
+        <link href="css/jacketspesific.css" rel="stylesheet">
         <link href="css/mediaqueries.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
         <!-- Hotjar Tracking Code for https://friendly-colden-d1ab7e.netlify.app/index.html -->
@@ -57,68 +57,48 @@
                 <i class="fas fa-search"></i>
             </div>
             <nav class="navigation">
-                <a class="navigation-link" href="index.html">Home</a></li> 
+                <a class="navigation-link" href="index.html">Home</a> 
                 <i class="fas fa-chevron-right"></i>
-                <a href="checkout.html">Check out</a>
+                <a class="navigation-link" href="listofjackets.html">Women</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="jacketspesific.html">Lofoten Jacket</a>   
             </nav>
-
-
-            <div class="product-container">
-                <div class="product-header">
-                    <h5 class="product-title">PRODUCT</h5>
-                    <h5 class="price">PRICE</h5>
-                    <h5 class="quantity">QUANTITY</h5>
-                    <h5 class="total">TOTAL</h5>
+            <div class="jacketspesific-first-box">
+                <div class="img__jacketspesific">
+                    <img src="images/jacket-lofoten.jpg" alt="picture of a blue Lofoten jacket" class="img__jacketspesific__large">
                 </div>
-                <div class="product">
-                    <!-- her vi skal legge alt fra local storage -->
+                <div class="jacketspesific__info">
+                    <div>
+                        <h1>Senja Jacket</h1>
+                        <p>Gore Tex</p>
+                        <p>1 499,-</p>
+                    </div>
+
+                    <div class="jacketspesific__size">
+                        <p>XS</p>
+                        <p>S</p>
+                        <p>M</p>
+                        <p>L</p>
+                        <p>XL</p>
+                    </div>
+                    <button id="add-to-cart">Add to cart</button>
+                </div>        
+            </div>
+            <div class="jacketspesific-second-box">
+                <div class="jacketspesific__about">
+                    <h2>About Lofoten Jacket</h2>
+                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibus</p>
                 </div>
-            </div>
-
-
-
-
-            <div class="checkout">
-                <h1>Check out</h1>
-                <h2>Your Shopping Bag</h2>
-                <h2>Complete order</h2>
-                <form>
-                    <div class="order-container">
-                        <div class="order-container-fields">
-                            <input type="text" name="first-name" id="first-name" class="order-input">
-                            <label for="first-name" class="order-label">First Name *</label>
-                        </div>
-                        <div class="order-container-fields">
-                            <input type="text" name="last-name" id="last-name" class="order-input">
-                            <label for="last-name" class="order-label">Last Name *</label>
-                        </div>
-                    </div>
-                    <div class="order-container-fields">
-                        <input type="text" name="adress" id="adress" class="order-input">
-                        <label for="adress" class="order-label">Street Adress *</label>
-                    </div>
-                    <div class="order-container">
-                        <div class="order-container-fields">
-                            <input type="number" name="code" id="code" class="order-input">
-                            <label for="code" class="order-label">Zip Code *</label>
-                        </div>
-                        <div class="order-container-fields">
-                            <input type="text" name="town" id="town" class="order-input">
-                            <label for="town" class="order-label">Town *</label>
-                        </div>
-                    </div>
-                    <div class="order-container-fields">
-                        <input type="text" name="mail" id="mail" class="order-input">
-                        <label for="mail" class="order-label">Email *</label>
-                    </div>
-                    <div class="order-container-fields">
-                        <input type="tel" name="phone" id="phone" class="order-input"> 
-                        <label for="phone" class="order-label">Phone</label>
-                    </div>
-                    <button class="cta-checkout">Purchase order</button>
-                </form>
-            </div>
-                       
+                <div class="jacketspesific__about">
+                    <h2>Review Lofoten Jacket</h2>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. </p>
+                </div>
+            </div> 
         </main>
         <footer>
             <div class="footer-container">
@@ -181,6 +161,5 @@
         </footer> 
 
         <script src="js/cart.js"></script>
-
     </body>
 </html>

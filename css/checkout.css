@@ -42,3 +42,8 @@ form {
   border-radius: 10px;
   color: white;
 }
+
+.product-header {
+  display: flex;
+  justify-content: space-evenly;
+}
