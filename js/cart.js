@@ -1,5 +1,5 @@
 const addToCarts = document.querySelectorAll("#add-to-cart");
-const cartCount = document.querySelector(".cart-count");
+const cartCount = document.querySelector("#cart-count");
 const productContainer = document.querySelector(".product");
 
 let products = [
@@ -119,21 +119,24 @@ function displayCart() {
 
         Object.values(cartItem).map(item => {
             productContainer.innerHTML += 
-            `<div class="product">
-                <i class="far fa-times-circle"></i> 
-                <img src="./images/${item.tag}.jpg">
-                <div>${item.name}</span>
+            `<div class="product-header-js">
+                <div class="product">
+                    <div>${item.name}</div>
+                </div>
+                <div class="product">
+                    <div>${item.price}</div>
+                </div>
+                <div class="product-quantity">
+                    <i class="fas fa-chevron-left"></i><div>${item.inCart}</div><i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="product">
+                    <div>${item.inCart * item.price}</div>
+                </div>
             </div>
-            <div class="price">${item.price}</div>
-            <div class="quantity">
-                <i class="fas fa-chevron-left"></i>
-                <span>${item.inCart}</span>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="total">
-                ${item.inCart * item.price}
-            </div>`
+            `            
         })
+
+        
 
         productContainer.innerHTML += 
         `<div>

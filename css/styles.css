@@ -30,7 +30,6 @@ header {
 .header-links {
   display: inline;
   padding: 20px 3px;
-  text-transform: uppercase;
 }
 
 .header-links a:hover {

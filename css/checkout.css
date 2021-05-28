@@ -1,3 +1,7 @@
+.shopping {
+  display: flex;
+}
+
 .checkout {
   margin: 40px;
 }
@@ -43,7 +47,20 @@ form {
   color: white;
 }
 
-.product-header {
+.product-header,
+.product-header-js {
   display: flex;
-  justify-content: space-evenly;
+}
+
+.product-header h4,
+.product-header-js {
+  margin-right: 40px;
+}
+
+.product {
+  font-size: 0.8em;
+}
+
+.product-quantity {
+  display: flex;
 }
