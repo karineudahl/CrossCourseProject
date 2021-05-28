@@ -1,11 +1,11 @@
 const addToCarts = document.querySelectorAll("#add-to-cart");
 const cartCount = document.querySelector(".cart-count");
-const productContainer = document.querySelector(".product-container");
+const productContainer = document.querySelector(".product");
 
 let products = [
     {
         name: "Lofoten Jacket",
-        tag: "lofotenjacket",
+        tag: "jacket-lofoten",
         price: 1499,
         inCart: 0
     },
@@ -92,8 +92,36 @@ function displayCart() {
     let cartItem = localStorage.getItem("productsInCart");
     cartItem = JSON.parse(cartItem);
 
+    // denne har jeg skrevet før, lage en variabel på utsiden av funksjonene? 
+    let cartCost = localStorage.getItem("totaltCost");
+
     if(cartItem && productContainer) {
-        console.log("running");
+        
+        productContainer.innerHTML = ""; 
+
+        Object.values(cartItem).map(item => {
+            productContainer.innerHTML += 
+            `<div class="product">
+                <i class="far fa-times-circle"></i> 
+                <img src="./images/${item.tag}.jpg">
+                <div>${item.name}</span>
+            </div>
+            <div class="price">${item.price}</div>
+            <div class="quantity">
+                <i class="fas fa-chevron-left"></i>
+                <span>${item.inCart}</span>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="total">
+                ${item.inCart * item.price}
+            </div>`
+        })
+
+        productContainer.innerHTML += 
+        `<div>
+            <h3>Total:</h3>
+            <p>${cartCost}</p>
+        </div>`
     }
 }
 
