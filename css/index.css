@@ -1,8 +1,3 @@
-.img-general {
-  width: 100%;
-  display: block;
-}
-
 .home-new-collection {
   background-image: url(../images/before-climbing.jpg);
   min-height: 50vh;
@@ -30,46 +25,30 @@
   color: #103867;
   font-size: 1.5em;
   padding: 5px 30px;
-  text-transform: uppercase;
-  border: solid #103867 2px;
-  border-radius: 20px;
+  border: solid #103867 1px;
+  border-radius: 10px;
   background-color: white;
 }
 
-.shop-by-category {
+.category-container {
   position: relative;
 }
 
-.shop-by-category__content {
-  position: relative;
-}
-
-.shop-by-category__content-info {
+.home-text {
   position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  padding: 10px 30px;
   text-align: center;
-  bottom: 0px;
-  font-size: 1em;
-  background-color: rgba(255, 255, 255, 0.7);
-  height: 140px;
-  width: 100%;
-}
-
-.test-container {
-  position: relative;
-}
-
-.test-img {
-  width: 100%;
-}
-
-.test-tekst {
-  position: absolute;
-  bottom: 0px;
   color: #103867;
-  font-size: 1.5em;
-  padding: 5px 30px;
-  text-transform: uppercase;
-  border: solid #103867 2px;
-  border-radius: 20px;
-  background-color: white;
+  font-size: 1em;
+  border: solid #103867 1px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.663);
+}
+
+.category-img {
+  width: 100%;
+  display: block;
 }

@@ -80,16 +80,13 @@
   .home-new-collection__content {
     font-size: 0.8em;
     bottom: 50px;
-    height: 170px;
-    width: 350px;
+    height: 140px;
+    width: 370px;
   }
 
-  .pushing-the-comfort-zone__content {
-    font-size: 4em;
-  }
-
-  .fa-chevron-right {
-    font-size: 0.7em;
+  .home-text {
+    font-size: 1.4em;
+    width: 200px;
   }
 
   .listofjackets-background-title {
@@ -97,22 +94,16 @@
     bottom: 65px;
   }
 
-  .listofjackets-jackets {
-    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+  .jackets-container h2 {
+    font-size: 1.1em;
   }
 
-  .listofjackets-jackets__name-price {
-    font-size: 1em;
-  }
-
-  .listofjackets-jackets__description {
-    font-size: 0.8em;
-  }
-
-  .listofjackets-select__type {
+  .jackets-container h3 {
     font-size: 0.9em;
-    height: 25px;
-    width: 80px;
+  }
+
+  .jackets {
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
   }
 
   .listofjackets-background-img {
@@ -121,6 +112,7 @@
 
   .jacketspesific-first-box {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 
@@ -149,30 +141,18 @@
     font-size: 1em;
     bottom: 70px;
     right: 60px;
-    height: 210px;
+    height: 170px;
     width: 450px;
   }
 
-  .shop-by-category {
+  .category {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .shop-by-category__content {
+  .category-container {
     margin: 50px 20px;
-  }
-
-  .pushing-the-comfort-zone__content {
-    font-size: 4em;
-  }
-
-  .footer-links {
-    font-size: 0.9em;
-  }
-
-  .fa-chevron-right {
-    font-size: 0.7em;
   }
 
   .listofjackets-background-title {
@@ -180,36 +160,26 @@
     bottom: 55px;
   }
 
-  .listofjackets-jackets {
+  .jackets {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-    margin: 0px 50px;
-  }
-
-  .listofjackets-select {
-    margin: 0px 60px;
-  }
-
-  .listofjackets-jackets__name-price {
-    font-size: 1.2em;
-  }
-
-  .listofjackets-jackets__description {
-    font-size: 0.9em;
-  }
-
-  .listofjackets-select__type {
-    font-size: 1em;
-    height: 25px;
-    width: 100px;
   }
 
   .listofjackets-background-img {
     background-position-y: -120px;
   }
 
+  .jackets-container h2 {
+    font-size: 1.1em;
+  }
+
+  .jackets-container h3 {
+    font-size: 0.9em;
+  }
+
   .jacketspesific-first-box,
   .jacketspesific-second-box {
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 

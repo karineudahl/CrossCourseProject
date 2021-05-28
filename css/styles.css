@@ -13,16 +13,11 @@ h2 {
   color: #001026;
 }
 
-h3,
-p {
-  color: #191c20;
-}
-
 a {
   text-decoration: none;
   color: #001026;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-family: "PT sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -58,6 +53,10 @@ header {
 .fa-shopping-bag {
   color: #103867;
   font-size: 1.4em;
+}
+
+.fa-shopping-bag {
+  color: #008a00;
 }
 
 .header-icon {
@@ -97,6 +96,7 @@ footer {
   background-color: #f0f0f0;
   padding: 30px 40px;
   font-family: "PT Serif", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8em;
 }
 
 .footer-container {

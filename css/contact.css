@@ -4,6 +4,10 @@ form {
   max-width: 450px;
 }
 
+form {
+  margin-bottom: 150px;
+}
+
 .contact-container {
   position: relative;
   margin-bottom: 20px;

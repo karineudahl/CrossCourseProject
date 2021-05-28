@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Rainydays | List of Jackets</title>
-        <meta name="description" content="See all of the jackets from Rainydays">
+        <title>Rainydays | Lofoten Jacket</title>
+        <meta name="description" content="Lofoten Jacket for a good price">
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/listofjackets.css" rel="stylesheet">
+        <link href="css/jacketspesific.css" rel="stylesheet">
         <link href="css/mediaqueries.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
     </head>
@@ -34,8 +34,8 @@
                     <li class="header-links"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav> 
-            <div class="header-icon">
-                <a href="checkout.html"><i class="fas fa-shopping-bag"><span>0</span></i></a>
+            <div class="cart">
+                <a href="checkout.html"><i class="fas fa-shopping-bag"><span class="cart-count">0</span></i></a>
             </div>
         </header>
         <main>
@@ -44,57 +44,47 @@
                 <i class="fas fa-search"></i>
             </div>
             <nav class="navigation">
-                <a class="navigation-link" href="index.html">Home</a>
+                <a class="navigation-link" href="index.html">Home</a> 
                 <i class="fas fa-chevron-right"></i>
-                <a href="listofjackets.html">Jackets</a>
+                <a class="navigation-link" href="listofjackets.html">Jacket</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="jacketspesific.html">Senja Jacket</a>   
             </nav>
-            <div class="listofjackets-background-img">
-                <h1 class="listofjackets-background-title">Jackets</h1>
+            <div class="jacketspesific-first-box">
+                <div class="img__jacketspesific">
+                    <img src="images/jacketsenja.png" alt="picture of a blue Lofoten jacket">
+                </div>
+                <div class="jacketspesific__info">
+                    <div>
+                        <h1>Senja Jacket</h1>
+                        <p>Gore Tex</p>
+                        <p>1 500,-</p>
+                    </div>
+                    <div class="jacketspesific__size">
+                        <p>XS</p>
+                        <p>S</p>
+                        <p>M</p>
+                        <p>L</p>
+                        <p>XL</p>
+                    </div>
+                    <button id="add-to-cart" class="add-to-cart">Add to cart</button>
+                </div>  
             </div>
-            <div class="jackets">
-                <a class="jackets-container" href="jacketlofoten.html"> 
-                    <img class="img-general" src="images/jacketlofoten.png" alt="LOFOTEN JACKET">
-                    <div>
-                        <h2>Lofoten</h2>
-                        <h3>1 000 ,-</h3>
-                    </div>
-                </a>
-                <a class="jackets-container" href="jacketsenja.html"> 
-                    <img class="img-general" src="images/jacketsenja.png" alt="SENJA JACKET">
-                    <div>
-                        <h2>Senja</h2>
-                        <h3>1 500 ,-</h3>
-                    </div>
-                </a>
-                <a class="jackets-container" href="jacketromsdalen.html">
-                    <img class="img-general" src="images/jacketromsdalen.png" alt="ROMSDALEN JACKET">
-                    <div>
-                        <h2>Romsdalen</h2>
-                        <h3>1 300 ,-</h3> 
-                    </div>
-                </a>
-                <a class="jackets-container" href="jacketjotunheimen.html">
-                    <img class="img-general" src="images/jacketjotunheimen.png" alt="JOTUNHEIMEN JACKET">
-                    <div>
-                        <h2>Jotunheimen</h2>
-                        <h3>500 ,-</h3>
-                    </div>
-                </a>
-                <a class="jackets-container" href="jacketfemunden.html">
-                    <img class="img-general" src="images/jacketfemunden.png" alt="FEMUNDEN JACKET">
-                    <div>
-                        <h2>Femunden</h2>
-                        <h3>850 ,-</h3>
-                    </div>
-                </a>
-                <a class="jackets-container" href="jacketsvalbard.html">
-                    <img class="img-general" src="images/jacketsvalbard.png" alt="SVALBARD JACKET">
-                    <div>
-                        <h2>Svalbard</h2>
-                        <h3>1 990 ,-</h3>
-                    </div>
-                </a>
-            </div>
+            <div class="jacketspesific-second-box">
+                <div class="jacketspesific__about">
+                    <h3>About Senja Jacket</h3>
+                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibus</p>
+                </div>
+                <div class="jacketspesific__about">
+                    <h3>Review Senja Jacket</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. </p>
+                </div>
+            </div> 
         </main>
         <footer>
             <div class="footer-container">
@@ -153,5 +143,7 @@
                 </div>
             </div>
         </footer> 
+
+        <script src="js/cart.js"></script>
     </body>
 </html>

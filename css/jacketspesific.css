@@ -1,35 +1,12 @@
-.img__jacketspesific {
-  text-align: center;
-  margin-top: 20px;
+.jacketspesific-first-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.img__jacketspesific__large {
-  height: 200px;
-}
-
-.img__jacketspesific__small-styling {
-  border: solid 1px;
-  height: 35px;
-  padding: 5px;
-  margin-top: 10px;
-}
-
-.jacketspesific__info {
-  margin: 30px 30px 10px 30px;
-}
-
-.jacketspesific__info-text {
-  margin: 0px;
-}
-
-.fa-stop {
-  margin-right: 5px;
-}
-
-.jacketspesific__color {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  margin-top: 20px;
+img {
+  height: 300px;
+  margin: 0px 50px 0px 50px;
 }
 
 .jacketspesific__size {
@@ -38,27 +15,35 @@
 
 .jacketspesific__size p {
   border: solid 1px;
-  width: 20px;
+  width: 10px;
+  font-size: 0.6em;
   text-align: center;
   margin-right: 4px;
-  padding: 10px;
+  padding: 8px;
 }
 
 .add-to-cart {
-  background-color: #faab42;
-  border: solid #faab42 2px;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 10px;
-  text-transform: uppercase;
-  border-radius: 20px;
   color: white;
+  font-size: 1.5em;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #008a00;
+  margin-top: 20px;
+}
+
+.jacketspesific-second-box {
+  margin-bottom: 150px;
 }
 
 .jacketspesific__about {
   margin: 30px;
   border: solid 1px;
   padding: 0px 10px;
+}
+
+.jacketspesific__about p {
+  font-size: 0.7em;
 }
 
 .fa-star {

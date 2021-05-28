@@ -5,20 +5,38 @@ const productContainer = document.querySelector(".product");
 let products = [
     {
         name: "Lofoten Jacket",
-        tag: "jacket-lofoten",
-        price: 1499,
+        tag: "jacketlofoten",
+        price: 1000,
         inCart: 0
     },
     {
         name: "Senja Jacket",
-        tag: "senjajacket",
-        price: 1499,
+        tag: "jacketsenja",
+        price: 1500,
         inCart: 0
     },
     {
         name: "Romsdalen Jacket",
-        tag: "romsdalenjacket",
-        price: 1499,
+        tag: "jacketromsdalen",
+        price: 1300,
+        inCart: 0
+    },
+    {
+        name: "Jotunheimen Jacket",
+        tag: "jacketjotunheimen",
+        price: 500,
+        inCart: 0
+    },
+    {
+        name: "Femunden Jacket",
+        tag: "jacket",
+        price: 850,
+        inCart: 0
+    },
+    {
+        name: "Svalbard Jacket",
+        tag: "jacket",
+        price: 1990,
         inCart: 0
     }
 ];
