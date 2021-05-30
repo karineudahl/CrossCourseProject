@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Rainydays | Senja</title>
-        <meta name="description" content="Lofoten Jacket for a good price">
+        <title>Rainydays | Shopping Bag</title>
+        <meta name="description" content="Checkout page with the product you have choosen">
         <meta name="viewport" content="width=device-width, initial scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/jacketspesific.css" rel="stylesheet">
+        <link href="css/shoppingbag.css" rel="stylesheet">
         <link href="css/mediaqueries.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
     </head>
@@ -39,52 +39,37 @@
             </div>
         </header>
         <main>
-            <div class="search">
+            <div class="search"> 
                 <input type="text" placeholder="Search for jackets" class="search-input"></i>
                 <i class="fas fa-search"></i>
             </div>
             <nav class="navigation">
-                <a class="navigation-link" href="index.html">Home</a> 
+                <a class="navigation-link" href="index.html">Home</a></li> 
                 <i class="fas fa-chevron-right"></i>
-                <a class="navigation-link" href="listofjackets.html">Jacket</a>
-                <i class="fas fa-chevron-right"></i>
-                <a href="jacketspesific.html">Senja Jacket</a>   
+                <a href="shoppingbag.html">Shopping bag</a>
             </nav>
-            <div class="jacketspesific-first-box">
-                <div class="img__jacketspesific">
-                    <img src="images/jacketsenja.png" alt="picture of a blue Lofoten jacket">
+ 
+
+            
+
+            <div class="product-container">
+                <div class="product-header">
+                    <h4>Product</h4>
+                    <h4>Price</h4>
+                    <h4>Quantity</h4>
+                    <h4>Total</h4>
                 </div>
-                <div class="jacketspesific__info">
-                    <div>
-                        <h1>Senja Jacket</h1>
-                        <p>Gore Tex</p>
-                        <p>1 500,-</p>
-                    </div>
-                    <div class="jacketspesific__size">
-                        <p>XS</p>
-                        <p>S</p>
-                        <p>M</p>
-                        <p>L</p>
-                        <p>XL</p>
-                    </div>
-                    <button id="add-to-cart" class="add-to-cart">Add to cart</button>
-                </div>  
+                <div class="product">
+                    <p>Du har ingen varer i handlekurven. Fortsett å handle</p>
+                    <!-- her vi skal legge alt fra local storage -->
+                </div>
             </div>
-            <div class="jacketspesific-second-box">
-                <div class="jacketspesific__about">
-                    <h3>About Senja Jacket</h3>
-                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. Ita quia cori dolore plicide pore con ni ommolorrum quae optatent quam dolorum facea sequam nam facipsum quo bearchi citiunt esendae vel minus sunt, nit eatqui num estiisi nctios por mi, que volore voluptas eum solo optatquam, aut fuga. Fuga. Hendit maxim hitatibus</p>
-                </div>
-                <div class="jacketspesific__about">
-                    <h3>Review Senja Jacket</h3>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et que et anis cum nos volorpor aut a doluptatem dolupta temqui aut demolup tibuscitem. </p>
-                </div>
-            </div> 
+
+            <a class="cta-shopping-bag" href="checkout.html">checkout</a>
+
+
+
+                       
         </main>
         <footer>
             <div class="footer-container">
@@ -145,5 +130,6 @@
         </footer> 
 
         <script src="js/cart.js"></script>
+
     </body>
 </html>

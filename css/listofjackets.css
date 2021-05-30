@@ -34,10 +34,12 @@
   padding: 10px;
 }
 
-.jackets-container h2 {
+.jackets-container h3 {
   font-size: 0.9em;
 }
 
-.jackets-container h3 {
-  font-size: 0.7em;
+.jackets-container:hover {
+  background-color: #103867;
+  color: white;
+  transition: 0.5s;
 }

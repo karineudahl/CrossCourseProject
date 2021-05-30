@@ -48,6 +48,13 @@
   background-color: rgba(255, 255, 255, 0.663);
 }
 
+.cta-homepage:hover,
+.home-text:hover {
+  background-color: #103867;
+  color: white;
+  transition: 1s;
+}
+
 .category-img {
   width: 100%;
   display: block;

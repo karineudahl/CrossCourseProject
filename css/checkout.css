@@ -1,7 +1,3 @@
-.shopping {
-  display: flex;
-}
-
 .checkout {
   margin: 40px;
 }
@@ -9,6 +5,7 @@
 form {
   max-width: 600px;
   margin-bottom: 150px;
+  position: relative;
 }
 
 .order-container {
@@ -38,29 +35,33 @@ form {
 }
 
 .cta-checkout {
-  background-color: #faab42;
-  border: none;
+  background-color: #008a00;
   font-size: 1em;
   padding: 7px 30px;
-  text-transform: uppercase;
   border-radius: 10px;
   color: white;
+  border: solid 1px #008a00;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0px;
 }
 
-.product-header,
-.product-header-js {
-  display: flex;
+.cta-checkout:hover {
+  color: #008a00;
+  background-color: white;
+  border: solid 1px #008a00;
+  transition: 0.5s;
 }
 
-.product-header h4,
-.product-header-js {
-  margin-right: 40px;
+.form-error {
+  color: red;
+  display: none;
 }
 
-.product {
-  font-size: 0.8em;
-}
-
-.product-quantity {
-  display: flex;
+.message-success {
+  background-color: rgb(91, 163, 91);
+  margin: 50px 0px;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
 }

@@ -35,7 +35,7 @@
                 </ul>
             </nav> 
             <div class="cart">
-                <a href="checkout.html"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
+                <a href="shoppingbag.html"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
             </div>
         </header>
         <main>
@@ -46,68 +46,63 @@
             <nav class="navigation">
                 <a class="navigation-link" href="index.html">Home</a></li> 
                 <i class="fas fa-chevron-right"></i>
+                <a class="navigation-link" href="shoppingbag.html">Shopping bag</a>
+                <i class="fas fa-chevron-right"></i>
                 <a href="checkout.html">Check out</a>
             </nav>
  
-
-            <div class="product-container">
-                <div class="product-header">
-                    <h4>Product</h4>
-                    <h4>Price</h4>
-                    <h4>Quantity</h4>
-                    <h4>Total</h4>
-                </div>
-                <div class="product">
-                    <p>Du har ingen varer i handlekurven. Fortsett å handle</p>
-                    <!-- her vi skal legge alt fra local storage -->
-                </div>
-            </div>
-
 
 
 
             <div class="checkout">
                 <h1>Check out</h1>
-                <h2>Your Shopping Bag</h2>
                 <h2>Complete order</h2>
-                <form>
+                <div id="messageSucess"></div>
+                <form id="form">
                     <div class="order-container">
                         <div class="order-container-fields">
                             <input type="text" name="first-name" id="first-name" class="order-input">
                             <label for="first-name" class="order-label">First Name *</label>
+                            <div class="form-error" id="firstNameError">Pleace enter your first name</div>
                         </div>
                         <div class="order-container-fields">
                             <input type="text" name="last-name" id="last-name" class="order-input">
                             <label for="last-name" class="order-label">Last Name *</label>
+                            <div class="form-error" id="lastNameError">Pleace enter your last name</div>
                         </div>
                     </div>
                     <div class="order-container-fields">
-                        <input type="text" name="adress" id="adress" class="order-input">
-                        <label for="adress" class="order-label">Street Adress *</label>
+                        <input type="text" name="street-adress" id="street-adress" class="order-input">
+                        <label for="street-adress" class="order-label">Street Adress *</label>
+                        <div class="form-error" id="streetAdressError">Pleace enter your street adress</div>
                     </div>
                     <div class="order-container">
                         <div class="order-container-fields">
-                            <input type="number" name="code" id="code" class="order-input">
-                            <label for="code" class="order-label">Zip Code *</label>
+                            <input type="number" name="zip-code" id="zip-code" class="order-input">
+                            <label for="zip-code" class="order-label">Zip Code *</label>
+                            <div class="form-error" id="ZipCodeError">Pleace enter your zip code</div>
                         </div>
                         <div class="order-container-fields">
                             <input type="text" name="town" id="town" class="order-input">
                             <label for="town" class="order-label">Town *</label>
+                            <div class="form-error" id="townError">Pleace enter your town</div>
                         </div>
                     </div>
                     <div class="order-container-fields">
-                        <input type="text" name="mail" id="mail" class="order-input">
-                        <label for="mail" class="order-label">Email *</label>
+                        <input type="text" name="email" id="email" class="order-input">
+                        <label for="email" class="order-label">Email *</label>
+                        <div class="form-error" id="emailError">Pleace enter your email</div>
                     </div>
                     <div class="order-container-fields">
                         <input type="tel" name="phone" id="phone" class="order-input"> 
-                        <label for="phone" class="order-label">Phone</label>
+                        <label for="phone" class="order-label">Phone (8 numbers)</label>
                     </div>
-                    <button class="cta-checkout">Purchase order</button>
+                    <button class="cta-checkout">Purchase</button>
                 </form>
             </div>
                        
         </main>
+
         <footer>
             <div class="footer-container">
                 <h3><i class="fas fa-grip-lines-vertical"></i>Contact us</h3>
@@ -166,6 +161,7 @@
             </div>
         </footer> 
 
+        <script src="js/checkout.js"></script>
         <script src="js/cart.js"></script>
 
     </body>

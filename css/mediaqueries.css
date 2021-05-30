@@ -128,13 +128,14 @@
   }
 
   .header-links__big-screen {
-    display: inline;
-    margin-right: 34px;
+    position: absolute;
+    right: 0px;
+    margin-right: 40px;
   }
 
   .header-links {
     padding: 0px 15px;
-    font-size: 1.1em;
+    font-size: 1.4em;
   }
 
   .home-new-collection__content {

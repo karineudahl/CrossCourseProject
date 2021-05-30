@@ -22,9 +22,15 @@ a {
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 20px 20px 0px 20px;
+  position: relative;
+}
+
+.fa-shopping-bag,
+.fa-bars {
+  position: absolute;
+  right: 0px;
+  margin-top: 10px;
 }
 
 .header-links {
@@ -34,13 +40,22 @@ header {
 
 .header-links a:hover {
   color: white;
+  transition: 0.5s;
 }
 
 .header-links:hover,
-.fa-search:hover,
-.fa-shopping-bag:hover {
+.navigation-link:hover,
+.fa-search:hover {
   background-color: #103867;
   color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.fa-shopping-bag:hover {
+  background-color: #008a00;
+  color: white;
+  transition: 0.5s;
 }
 
 .img-logo {
@@ -85,10 +100,6 @@ header {
 .navigation {
   margin: 30px;
   display: flex;
-}
-
-.navigation-link {
-  text-decoration: underline;
 }
 
 footer {
@@ -137,7 +148,11 @@ footer {
 .fa-instagram:hover,
 .fa-facebook-f:hover,
 .fa-snapchat-ghost:hover {
-  background-color: #1553b6d3;
-  transition: 1s;
+  background-color: #103867;
+  transition: 0.5s;
   color: white;
+}
+
+a :active {
+  text-decoration: underline;
 }

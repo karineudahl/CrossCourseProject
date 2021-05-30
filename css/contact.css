@@ -2,6 +2,7 @@
 form {
   margin: 50px;
   max-width: 450px;
+  position: relative;
 }
 
 form {
@@ -43,8 +44,17 @@ form {
   padding: 7px 30px;
   border-radius: 10px;
   color: white;
-  border: none;
+  border: solid 1px #008a00;
   text-transform: uppercase;
+  position: absolute;
+  right: 0px;
+}
+
+.cta-contact:hover {
+  color: #008a00;
+  background-color: white;
+  border: solid 1px #008a00;
+  transition: 0.5s;
 }
 
 .form-error {
