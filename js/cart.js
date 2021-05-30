@@ -1,6 +1,8 @@
 const addToCarts = document.querySelectorAll("#add-to-cart");
 const cartCount = document.querySelector("#cart-count");
-const productContainer = document.querySelector(".product");
+const productContainer = document.querySelector(".products");
+const productHeading = document.querySelector(".products-container");
+const emptyBag = document.querySelector(".emty-bag");
 
 let products = [
     {
@@ -69,7 +71,7 @@ function cartNumbers(product) {
         localStorage.setItem("cartNumbers", 1);
         cartCount.innerHTML = `1`;
     }
-
+ 
     setItems(product);
 }
 
@@ -102,50 +104,51 @@ function totalCost(product) {
         localStorage.setItem("totaltCost", cartCost + product.price)
     } else {
         localStorage.setItem("totaltCost", product.price);
-    }
-    
+    }   
 }
 
 function displayCart() {
     let cartItem = localStorage.getItem("productsInCart");
     cartItem = JSON.parse(cartItem);
 
-    // denne har jeg skrevet før, lage en variabel på utsiden av funksjonene? 
     let cartCost = localStorage.getItem("totaltCost");
 
     if(cartItem && productContainer) {
         
+        emptyBag.style.display = "none";
+        productHeading.style.display = "block";
+
         productContainer.innerHTML = ""; 
 
         Object.values(cartItem).map(item => {
             productContainer.innerHTML += 
-            `<div class="product-header-js">
-                <div class="product">
-                    <div>${item.name}</div>
+            `<div class="product-bag">
+                <div class="product-title">
+                    <i class="far fa-times-circle"></i>
+                    <span>${item.name}</span>
                 </div>
-                <div class="product">
-                    <div>${item.price}</div>
+                <div class="price">${item.price}</div>
+                <div class="quantity">
+                    <i class="fas fa-chevron-left"></i>
+                    <span>${item.inCart}</span>
+                    <i class="fas fa-chevron-right"></i>
                 </div>
-                <div class="product-quantity">
-                    <i class="fas fa-chevron-left"></i><div>${item.inCart}</div><i class="fas fa-chevron-right"></i>
+                <div class="total">
+                    ${item.inCart * item.price}
                 </div>
-                <div class="product">
-                    <div>${item.inCart * item.price}</div>
-                </div>
-            </div>
-            `            
+                </div>`            
         })
 
-        
-
         productContainer.innerHTML += 
-        `<div>
-            <h3>Total:</h3>
-            <p>${cartCost}</p>
-        </div>`
-    }
+        `<div class="basketTotalContainer">
+            <h4 class="basketTotalTitle">
+                Basket Total
+            </h4>
+            <h4 class="basketTotal>
+                ${cartCost}
+            </h4>`
+    } 
 }
-
 
 cartCountCheck();
 displayCart();

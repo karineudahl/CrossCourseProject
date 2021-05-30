@@ -1,14 +1,15 @@
-.cta-shopping-bag {
-  background-color: #faab42;
-  border: none;
-  font-size: 1em;
-  padding: 7px 30px;
-  text-transform: uppercase;
-  border-radius: 10px;
-  color: white;
+.shopping-bag {
+  margin: 20px 20px 200px 20px;
+}
+
+.products-container {
+  display: none;
+  position: relative;
 }
 
 .cta-shopping-bag {
+  position: absolute;
+  right: 0px;
   background-color: #008a00;
   font-size: 1em;
   padding: 7px 30px;
@@ -18,9 +19,71 @@
   text-transform: uppercase;
 }
 
-.cta-shopping-bag:hover {
+.cta-back {
+  background-color: #008a00;
+  padding: 7px 30px;
+  border-radius: 10px;
+  color: white;
+  border: solid 1px #008a00;
+  text-transform: uppercase;
+}
+
+.cta-shopping-bag:hover,
+.cta-back:hover {
   color: #008a00;
   background-color: white;
   border: solid 1px #008a00;
   transition: 0.5s;
+}
+
+.emty-bag {
+  text-align: center;
+}
+
+.products {
+  width: 100%;
+}
+
+.product-header {
+  max-width: 700px;
+  display: flex;
+  border-bottom: 2px solid #103867;
+  margin: 0 auto;
+}
+
+.product-bag {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #103867;
+  margin: 0 auto;
+  padding: 20px 0px 20px;
+}
+
+.product-title {
+  width: 60%;
+}
+
+.price,
+.quantity,
+.total {
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
 }

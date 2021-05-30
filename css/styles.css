@@ -153,6 +153,6 @@ footer {
   color: white;
 }
 
-a :active {
+a:active {
   text-decoration: underline;
 }
