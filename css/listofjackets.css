@@ -1,24 +1,19 @@
-.listofjackets-background-img {
-  background-image: url(../images/people-mountain.jpg);
-  min-height: 35vh;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
-  margin: 20px 0px 40px 0px;
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.listofjackets-background-title {
-  font-size: 3em;
-  font-weight: 100;
-  margin: 0px;
-  position: absolute;
-  left: 30px;
-  bottom: 80px;
+.products {
+  border: 1px solid;
+  padding: 10px;
+  margin: 20px;
 }
 
-.jackets {
+.products img {
+  width: 100%;
+}
+
+/* .jackets {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   margin: 0px 20px 150px 20px;
@@ -42,4 +37,4 @@
   background-color: #103867;
   color: white;
   transition: 0.5s;
-}
+} */
