@@ -31,7 +31,10 @@ function createHtml(details) {
             </div>
             <div>
                 <h1>${details.name}</h1>
-
+                <h4>Description</h4>
+                <p>${details.description}</p>
+                <p>${details.prices.price} $</p>
+                <button class="add-to-cart">Add to cart</button>
             </div>
         </div>`
 } 

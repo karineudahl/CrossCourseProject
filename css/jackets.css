@@ -1,5 +1,6 @@
 .jacketContainer {
   display: flex;
+  margin: 0px 20px 200px 0px;
 }
 
 .jacketContainer img {
@@ -8,4 +9,16 @@
 
 .jacketContainer h1 {
   margin-top: 70px;
+}
+
+.jacketContainer p {
+  font-size: 0.8em;
+}
+
+.add-to-cart {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
 }
