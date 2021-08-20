@@ -12,49 +12,28 @@
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
     </head>
     <body>
+
         <header>
-            <div>
-                <a href="index.html"><img src="images/logo.png" class="img-logo" alt="logo contains a mountain with snow and the title Rainydays, pushing the comfort zone"></a>
-            </div>
-
-
-            <div class="header-links__small-screen">
-                <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-                <nav class="hamburger-links">
-                    <ul>
-                        <li class="hamburger-links-link"><a href="listofjackets.html">Jackets</a></li>
-                        <li class="hamburger-links-link"><a href="about.html">About</a></li>
-                        <li class="hamburger-links-link"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>  
-
-
-            <nav class="header-links__big-screen">
-                <ul>
-                    <li class="header-links"><a href="listofjackets.html">Jackets</a></li>
-                    <li class="header-links"><a href="about.html">About</a></li>
-                    <li class="header-links"><a href="contact.html">Contact</a></li>
+            <nav class="nav-container">
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="shop.html">Jackets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav> 
-
-            
+            </nav>
             <div class="cart">
-                <a href="shoppingbag.html"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
+                <a href="shoppingbag.html" class="cart-content"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
             </div>
-
-
         </header>
+
         <main>
-            <div class="search">
-                <input type="text" placeholder="Search for jackets" class="search-input"></i>
-                <i class="fas fa-search"></i>
-            </div>
-            <nav class="navigation">
-                <a class="navigation-link" href="index.html">Home</a>
-                <i class="fas fa-chevron-right"></i>
-                <a href="about.html">About us</a>
+            <nav class="wheremAmI-container">
+                <ul>
+                    <li><a href="index.html">Home > </a></li>
+                    <li><a href="about.html" class="wheremAmI">About</a></li>
+                </ul>
             </nav>
             <div class="about">
                 <h1>About us</h1>
@@ -96,10 +75,8 @@
                 </table>
                 <a href="contact.html"><h2 class="about-contact">Contact us</h2></a>
             </div>
-            
-            
-
         </main>
+        
         <footer>
             <div class="footer-container">
                 <h3><i class="fas fa-grip-lines-vertical"></i>Contact us</h3>
@@ -158,6 +135,6 @@
             </div>
         </footer> 
 
-        <script src="js/cart.js"></script>
+        <script src="js/hamburger.js"></script>
     </body>
 </html>

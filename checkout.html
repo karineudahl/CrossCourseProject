@@ -13,42 +13,27 @@
     </head>
     <body>
         <header>
-            <div>
-                <a href="index.html"><img src="images/logo.png" class="img-logo" alt="logo contains a mountain with snow and the title Rainydays, pushing the comfort zone"></a>
-            </div>
-            <div class="header-links__small-screen">
-                <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-                <nav class="hamburger-links">
-                    <ul>
-                        <li class="hamburger-links-link"><a href="listofjackets.html">Jackets</a></li>
-                        <li class="hamburger-links-link"><a href="about.html">About</a></li>
-                        <li class="hamburger-links-link"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>  
-            <nav class="header-links__big-screen">
-                <ul>
-                    <li class="header-links"><a href="listofjackets.html">Jackets</a></li>
-                    <li class="header-links"><a href="about.html">About</a></li>
-                    <li class="header-links"><a href="contact.html">Contact</a></li>
+            <nav class="nav-container">
+                <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="shop.html">Jackets</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav> 
+            </nav>
             <div class="cart">
-                <a href="shoppingbag.html"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
+                <a href="shoppingbag.html" class="cart-content"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
             </div>
         </header>
         <main>
-            <div class="search"> 
-                <input type="text" placeholder="Search for jackets" class="search-input"></i>
-                <i class="fas fa-search"></i>
-            </div>
-            <nav class="navigation">
-                <a class="navigation-link" href="index.html">Home</a></li> 
-                <i class="fas fa-chevron-right"></i>
-                <a class="navigation-link" href="shoppingbag.html">Shopping bag</a>
-                <i class="fas fa-chevron-right"></i>
-                <a href="checkout.html">Check out</a>
+
+            <nav class="wheremAmI-container">
+                <ul>
+                    <li><a href="index.html">Home > </a></li>
+                    <li><a href="shoppingbag.html">Shoppingbag > </a></li>
+                    <li><a href="checkout.html" class="wheremAmI">Check out</a></li>
+                </ul>
             </nav>
  
 
@@ -162,7 +147,6 @@
         </footer> 
 
         <script src="js/checkout.js"></script>
-        <script src="js/cart.js"></script>
-
+        <script src="js/hamburger.js"></script>
     </body>
 </html>

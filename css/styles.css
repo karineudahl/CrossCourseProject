@@ -14,92 +14,54 @@ h2 {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
-  color: #001026;
+  color: black;
   text-transform: uppercase;
-  font-family: "PT sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-  display: flex;
-  margin: 20px 20px 0px 20px;
-  position: relative;
-}
-
-.fa-shopping-bag,
-.fa-bars {
-  position: absolute;
-  right: 0px;
-  margin-top: 10px;
-}
-
-.header-links {
-  display: inline;
-  padding: 20px 3px;
-}
-
-.header-links a:hover {
-  color: white;
-  transition: 0.5s;
-}
-
-.header-links:hover,
-.navigation-link:hover,
-.fa-search:hover {
-  background-color: #103867;
-  color: white;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-
-.fa-shopping-bag:hover {
-  background-color: #008a00;
-  color: white;
-  transition: 0.5s;
-}
-
-.img-logo {
-  max-height: 45px;
-}
-
-.fa-search,
-.fa-bars,
-.fa-shopping-bag {
-  color: #103867;
-  font-size: 1.4em;
-}
-
-.fa-shopping-bag {
-  color: #008a00;
-}
-
-.header-icon {
-  padding-right: 20px;
-  position: absolute;
-  right: 0px;
-}
-
-.search {
-  text-align: end;
-  margin: 0px 20px 20px 0px;
-}
-
-.search-input {
-  padding: 8px 15px 8px 15px;
-  width: 250px;
-  border-radius: 5px;
-  margin-right: 10px;
-  font-size: 1em;
-  border: solid 1px #103867;
-}
-
-.fa-chevron-right {
-  padding: 5px 20px;
-}
-
-.navigation {
   margin: 30px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-container {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.cart {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.cart-content {
+  position: absolute;
+  right: 20px;
+  font-size: 1.2em;
+}
+
+.cart-number {
+  padding-left: 5px;
+}
+
+.wheremAmI-container li {
+  display: inline;
+}
+
+.wheremAmI-container li a {
+  padding-right: 10px;
+}
+
+.wheremAmI {
+  text-decoration: none;
+  color: grey;
 }
 
 footer {
@@ -155,4 +117,25 @@ footer {
 
 a:active {
   text-decoration: underline;
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #103867;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

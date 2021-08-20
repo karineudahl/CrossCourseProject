@@ -1,80 +1,43 @@
 @media (max-width: 599px) {
-  .header-links__big-screen {
-    display: none;
-  }
-
-  .hamburger-links {
-    display: none;
-  }
-
-  #hamburger-menu {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .fa-bars {
-    margin-right: 60px;
-  }
-
-  .hamburger-links ul {
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    padding: 0px;
     list-style-type: none;
-    list-style-type: none;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    margin: 10px -200px;
-    width: 300px;
-    padding: 20px 0px;
+    display: none;
+    width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
     text-transform: uppercase;
   }
 
-  .hamburger-links-link {
-    padding: 10px 10px 15px 30px;
-  }
-
-  .hamburger-links-link:hover {
-    color: red;
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
   }
 }
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .header-links__big-screen {
+  .hamburger {
     display: none;
   }
 
-  .hamburger-links {
-    display: none;
-  }
-
-  #hamburger-menu {
-    display: none;
-  }
-
-  #hamburger-menu:checked ~ nav {
-    display: block;
-  }
-
-  .fa-bars {
-    margin-right: 45px;
-  }
-
-  .hamburger-links ul {
-    list-style-type: none;
-    list-style-type: none;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    margin: 10px -215px;
-    width: 300px;
-    padding: 20px 0px;
-    text-transform: uppercase;
-  }
-
-  .hamburger-links-link {
-    padding: 10px 10px 15px 30px;
+  .nav-ul li {
+    display: inline;
+    padding: 10px;
   }
 
   .home-new-collection__content {
@@ -123,19 +86,13 @@
 }
 
 @media (min-width: 900px) {
-  .header-links__small-screen {
+  .hamburger {
     display: none;
   }
 
-  .header-links__big-screen {
-    position: absolute;
-    right: 0px;
-    margin-right: 40px;
-  }
-
-  .header-links {
-    padding: 0px 15px;
-    font-size: 1.3em;
+  .nav-ul li {
+    display: inline;
+    padding: 10px;
   }
 
   .home-new-collection__content {

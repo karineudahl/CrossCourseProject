@@ -1,0 +1,27 @@
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products {
+  border: 1px solid lightgrey;
+
+  padding: 10px;
+  margin: 20px;
+}
+
+.products h2 {
+  font-size: 1em;
+}
+
+.products img {
+  width: 100%;
+}
+
+.shop-container {
+  margin: 30px 30px 180px 30px;
+}
+
+.shop-container h1 {
+  margin: 50px 0px 50px 9px;
+}
