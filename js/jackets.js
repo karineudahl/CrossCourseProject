@@ -29,7 +29,7 @@ function createHtml(details) {
             <div>
                 <img src="${details.images[0].src}" alt="${details.name}"> 
             </div>
-            <div>
+            <div class="jacketDescription">
                 <h1>${details.name}</h1>
                 <h4>Description</h4>
                 <p>${details.description}</p>
@@ -37,4 +37,4 @@ function createHtml(details) {
                 <button class="add-to-cart">Add to cart</button>
             </div>
         </div>`
-} 
+}  

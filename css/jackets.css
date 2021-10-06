@@ -1,5 +1,4 @@
 .jacketContainer {
-  display: flex;
   margin: 0px 20px 200px 0px;
 }
 
@@ -7,12 +6,12 @@
   height: 400px;
 }
 
-.jacketContainer h1 {
-  margin-top: 70px;
-}
-
 .jacketContainer p {
   font-size: 0.8em;
+}
+
+.jacketDescription {
+  margin: 0px 0px 0px 30px;
 }
 
 .add-to-cart {

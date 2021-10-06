@@ -40,6 +40,10 @@
     padding: 10px;
   }
 
+  .logo {
+    height: 40px;
+  }
+
   .contact,
   form,
   .about {
@@ -56,6 +60,11 @@
   .home-text {
     font-size: 1.4em;
     width: 200px;
+  }
+
+  .productsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .listofjackets-background-title {
@@ -79,10 +88,19 @@
     background-position-y: top;
   }
 
-  .jacketspesific-first-box {
+  /* .jacketspesific-first-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  } */
+
+  .jacketContainer {
+    display: flex;
+    margin: 0px 20px 200px 0px;
+  }
+
+  .jacketDescription {
+    margin: 60px 0px 0px 30px;
   }
 
   footer {
@@ -99,6 +117,10 @@
   .nav-ul li {
     display: inline;
     padding: 10px;
+  }
+
+  .logo {
+    height: 40px;
   }
 
   .contact,
@@ -139,6 +161,11 @@
     background-position-y: -120px;
   }
 
+  .productsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .jackets-container h2 {
     font-size: 1.1em;
   }
@@ -157,6 +184,16 @@
   .jacketspesific__about {
     width: 400px;
     margin: 35px 5px;
+  }
+
+  .jacketContainer {
+    display: flex;
+    margin: 0px auto 200px auto;
+    max-width: 900px;
+  }
+
+  .jacketDescription {
+    margin: 60px 0px 0px 30px;
   }
 
   footer {
