@@ -5,7 +5,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id"); 
 console.log(id);
 
-const url = "https://student-noroff.store//wp-json/wc/store/products/" + id;
+const url = "https://rainydays.student-noroff.store/wp-json/wc/store/products/" + id;
 
 console.log(url)
 

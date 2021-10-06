@@ -1,4 +1,4 @@
-const url = "https://student-noroff.store//wp-json/wc/store/products";
+const url = "https://rainydays.student-noroff.store/wp-json/wc/store/products/";
 const productContainer = document.querySelector(".productsContainer");
 
 
