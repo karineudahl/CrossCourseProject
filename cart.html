@@ -7,7 +7,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
         <link href="css/styles.css" rel="stylesheet">
-        <link href="css/shoppingbag.css" rel="stylesheet">
+        <link href="css/cart.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/jackets.css">
         <link href="css/mediaqueries.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3ca04481c9.js" crossorigin="anonymous"></script>
     </head>
@@ -23,7 +24,7 @@
                 </ul>
             </nav>
             <div class="cart">
-                <a href="shoppingbag.html" class="cart-content"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
+                <a href="cart.html" class="cart-content"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
             </div>
         </header>
         <main>
@@ -34,12 +35,28 @@
                 </ul>
             </nav>
  
+            
 
+<!-- 
             <div class="shopping-bag">
                 <div class="emty-bag">
-                    <h1>You have no items in your shopping cart</h1>
+                    <h1>You have no items in your shopping bag</h1>
                     <a class="cta-back" href="shop.html">Continue shopping</a>
                 </div>
+
+            </div> -->
+
+
+            <div class="cart-page">
+                <div class="cart-list"></div>
+                <div class="total"></div>
+            </div>
+
+
+
+
+            <!-- <div class="shopping-bag">
+                
                 <div class="products-container">
                     <div class="product-header">
                         <h4 class="product-title">Product</h4>
@@ -49,8 +66,8 @@
                     </div>
                     <div class="products"></div>
                     <a class="cta-shopping-bag" href="checkout.html">Next</a>
-                </div>
-            </div>        
+                </div> 
+            </div>         -->
         </main>
         <footer>
             <div class="footer-container">
@@ -111,5 +128,6 @@
         </footer> 
 
         <script src="js/hamburger.js"></script>
+        <script src="js/cart.js"></script>
     </body>
 </html>

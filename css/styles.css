@@ -37,6 +37,7 @@ header {
 }
 
 .cart {
+  display: flex;
   position: relative;
   padding-bottom: 40px;
 }
@@ -47,9 +48,9 @@ header {
   font-size: 1.2em;
 }
 
-.cart-number {
+/* .cart-number {
   padding-left: 5px;
-}
+} */
 
 .wheremAmI-container li {
   display: inline;

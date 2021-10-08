@@ -7,7 +7,6 @@ async function getProducts() {
         const response = await fetch(url); 
         const getResults = await response.json();
         createContent(getResults);
-        console.log(getResults)
     }
 
     catch(error) {

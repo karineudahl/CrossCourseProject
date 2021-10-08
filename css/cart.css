@@ -1,4 +1,17 @@
-.shopping-bag {
+.emty-bag {
+  text-align: center;
+}
+
+.cta-back {
+  background-color: #008a00;
+  padding: 7px 30px;
+  border-radius: 10px;
+  color: white;
+  border: solid 1px #008a00;
+  text-transform: uppercase;
+}
+
+/* .shopping-bag {
   margin: 20px 20px 200px 20px;
 }
 
@@ -19,14 +32,7 @@
   text-transform: uppercase;
 }
 
-.cta-back {
-  background-color: #008a00;
-  padding: 7px 30px;
-  border-radius: 10px;
-  color: white;
-  border: solid 1px #008a00;
-  text-transform: uppercase;
-}
+
 
 .cta-shopping-bag:hover,
 .cta-back:hover {
@@ -34,10 +40,6 @@
   background-color: white;
   border: solid 1px #008a00;
   transition: 0.5s;
-}
-
-.emty-bag {
-  text-align: center;
 }
 
 .products {
@@ -86,4 +88,4 @@
 
 .basketTotal {
   width: 10%;
-}
+} */
