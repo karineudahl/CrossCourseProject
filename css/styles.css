@@ -36,6 +36,10 @@ header {
   padding: 15px;
 }
 
+.nav-ul li a:hover {
+  text-decoration: underline;
+}
+
 .cart {
   display: flex;
   position: relative;
@@ -45,12 +49,12 @@ header {
 .cart-content {
   position: absolute;
   right: 20px;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
-/* .cart-number {
-  padding-left: 5px;
-} */
+.cart-content:hover {
+  transform: scale(1.4);
+}
 
 .wheremAmI-container li {
   display: inline;
@@ -58,6 +62,10 @@ header {
 
 .wheremAmI-container li a {
   padding-right: 10px;
+}
+
+.wheremAmI-container ul li a:hover {
+  text-decoration: underline;
 }
 
 .wheremAmI {
@@ -68,6 +76,7 @@ header {
 footer {
   background-color: #f0f0f0;
   padding: 30px 40px;
+  margin-top: 300px;
   font-family: "PT Serif", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8em;
 }

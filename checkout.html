@@ -23,27 +23,22 @@
                 </ul>
             </nav>
             <div class="cart">
-                <a href="cart.html" class="cart-content"><i class="fas fa-shopping-bag"><span class="cart-number" id="cart-count">0</span></i></a>
+                <a href="cart.html" class="cart-content"><i class="fas fa-shopping-bag"></i></a>
             </div>
         </header>
         <main>
 
             <nav class="wheremAmI-container">
                 <ul>
-                    <li><a href="index.html">Home > </a></li>
-                    <li><a href="shoppingbag.html">Shoppingbag > </a></li>
-                    <li><a href="checkout.html" class="wheremAmI">Check out</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cart.html"><i class="fas fa-chevron-right"></i> Shoppingbag</a></li>
+                    <li><a href="checkout.html" class="wheremAmI"><i class="fas fa-chevron-right"></i> Purcase order</a></li>
                 </ul>
             </nav>
- 
-
-
-
             <div class="checkout">
-                <h1>Check out</h1>
-                <h2>Complete order</h2>
-                <div id="messageSucess"></div>
                 <form id="form">
+                    <h1>Purcase order</h1>
+                    <div id="messageSucess"></div>
                     <div class="order-container">
                         <div class="order-container-fields">
                             <input type="text" name="first-name" id="first-name" class="order-input">
@@ -84,10 +79,8 @@
                     </div>
                     <button class="cta-checkout">Purchase</button>
                 </form>
-            </div>
-                       
+            </div>        
         </main>
-
         <footer>
             <div class="footer-container">
                 <h3><i class="fas fa-grip-lines-vertical"></i>Contact us</h3>
@@ -145,7 +138,6 @@
                 </div>
             </div>
         </footer> 
-
         <script src="js/checkout.js"></script>
         <script src="js/hamburger.js"></script>
     </body>

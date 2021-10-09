@@ -27,7 +27,6 @@ function validateForm() {
     } else {
         messageError.style.display = "block";
     }
-
 }
 
 form.addEventListener("submit", validateForm);

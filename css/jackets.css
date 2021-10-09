@@ -1,5 +1,5 @@
-.jacketContainer {
-  margin: 0px 20px 20px 0px;
+.jackets-details {
+  margin: 0px 20px 300px 0px;
 }
 
 .jacketContainer img {
@@ -17,7 +17,18 @@
 .add-to-cart {
   background-color: green;
   color: white;
-  border: none;
+  border: 1px solid green;
   padding: 15px 20px;
   border-radius: 5px;
+}
+
+.add-to-cart:hover {
+  background-color: white;
+  color: green;
+  border: 1px solid green;
+  transition: 0.5s;
+}
+
+.shopping-bag-active {
+  color: green;
 }

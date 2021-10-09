@@ -1,12 +1,9 @@
 const detailContainer = document.querySelector(".jackets-details"); 
-
+const menuDetails = document.querySelector(".jacket-details-menu");
 const queryString = document.location.search; 
 const params = new URLSearchParams(queryString);
 const id = params.get("id"); 
 const url = "https://rainydays.student-noroff.store/wp-json/wc/store/products/" + id;
-
-const cartList = document.querySelectorAll(".cart-list");
-const totalContainer = document.querySelector(".total");
 
 let cartArray = [];
 
@@ -15,8 +12,9 @@ async function detailsApi() {
         const response = await fetch(url); 
         const details = await response.json(); 
         createHtml(details); 
-
+        createMenu(details)
     }
+    
     catch(error) {
         detailContainer.innerHTML = "An error has occured"; 
     }
@@ -39,32 +37,28 @@ function createHtml(details) {
             </div>
         </div>`
 
-
         const buttons = document.querySelectorAll(".add-to-cart");
 
         buttons.forEach(function(button) {
-            button.onclick = function(event) { 
-                // const itemToAdd = details.find(item => item.id === event.target.dataset.product)
-                cartArray.push(event.target.dataset.product);
-              
+            button.onclick = function() { 
+
+                alert("Item added to cart");
+                
+                cartArray = JSON.parse(localStorage.getItem("cartList"));
+                if(cartArray === null) cartArray = [];
+                cartArray.push(details);
                 localStorage.setItem("cartList", JSON.stringify(cartArray));
             }
         })
 }  
 
-
-
-
-        // function showCart(cartItems) {
-
-        //     cartItems.forEach(function(cartElement) {
-        //         cartList.innerHTML += 
-        //         `<div>
-        //             <h4>${cartElement.name}</h4>
-        //         </div>`
-        //     })
-
-        // }
-
-
-
+function createMenu(details) {
+    menuDetails.innerHTML = 
+        `<nav class="wheremAmI-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html"><i class="fas fa-chevron-right"></i> Jackets</a></li>
+                <li><a class="wheremAmI"><i class="fas fa-chevron-right"></i> ${details.name}</a></li>
+            </ul>
+        </nav>`
+}; 

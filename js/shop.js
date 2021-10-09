@@ -1,7 +1,6 @@
 const url = "https://rainydays.student-noroff.store/wp-json/wc/store/products/";
 const productContainer = document.querySelector(".productsContainer");
 
-
 async function getProducts() {
     try {
         const response = await fetch(url); 
@@ -16,7 +15,6 @@ async function getProducts() {
 
 getProducts();
 
-
 function createContent(products) {
 
     productContainer.innerHTML = "";
@@ -26,8 +24,7 @@ function createContent(products) {
         `<a href="jackets.html?id=${product.id}" class="products">           
             <img src="${product.images[0].src}" alt="${product.name}">
             <h2>${product.name}</h2>
-            <p>${product.prices.price} $</p>
+            <p>${product.prices.price} kr</p>
         </a>`;
     })
 }
- 

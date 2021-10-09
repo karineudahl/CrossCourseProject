@@ -1,12 +1,15 @@
 .productsContainer {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr; */
 }
 
 .products {
   border: 1px solid lightgrey;
   padding: 10px;
   margin: 20px;
+}
+
+.products:hover {
+  transform: scale(0.95);
 }
 
 .products h2 {
