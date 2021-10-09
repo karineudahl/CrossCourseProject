@@ -19,7 +19,6 @@ cartItems.forEach(function(cartElement) {
 totalContainer.innerHTML = `<p>Total: ${total} kr</p>`;
 purcaseButton.innerHTML = `<div class="buttonContainer"><a href="checkout.html" class="purcaseButton">Purcase order</button></div>`
 
-
 document.querySelectorAll('.remove-button').forEach(item => {
     item.addEventListener('click', event => {
         cartItems = JSON.parse(localStorage.getItem("cartList"));
