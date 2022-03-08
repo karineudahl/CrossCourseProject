@@ -10,3 +10,4 @@ We have been working on this project through the first year of study.
 3. Learned some JavaScript - added JavaScript 
 4. Learned Interactive Design - had to do changes in design 
 5. Learned Content Management System - made the products in a headless Wordpress, deplyed it on one.com via FileZilla
+6. Had to change the HTML and JavaScript code to fetch the API instead of hardcoding the products 
